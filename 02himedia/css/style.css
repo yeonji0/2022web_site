@@ -50,3 +50,33 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     display: block ;
     line-height: 45px;
 }
+
+
+/* visual  */
+.visualWrap{
+    /* background-image: url(../images/main_bg01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #213C6B; */
+    background: #213C6B url(../images/main_bg01.jpg)no-repeat center;}
+.visualWrap .visual{ 
+    position: relative;
+    width: 980px; height: 400px;margin: 0 auto;
+    overflow: hidden;
+}
+.visualWrap .visual .txt{
+    position: absolute; top: 100px;
+    color: #eff0ee; font-size: 20px;
+ }
+
+.visualWrap .visual h3{ 
+    line-height: 80px; font-size: 76.6px;
+    letter-spacing: 0.34em;
+    margin-bottom: 10px;
+}
+
+.visualWrap .visual img{
+    position: absolute; right: 0;
+}
+
+.box{background-color: #f00; height: 300px;}
