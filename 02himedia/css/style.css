@@ -139,3 +139,21 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 /* footer  */
 .footerWrap{background-color: #5E5E5E;}
+.footerTop{background-color: #4d4d4d;}
+.container.footer .ftNav{float: left;}
+.container.footer .topMove{float: right; width: 60px;height: 45px;background-color: #404040;}
+.ftNav li {float: left;position: relative;}
+.ftNav li:after{
+    content: "";display: block;width: 1px; height: 13px;
+    background-color: #ccc;position: absolute; right: 0;top: 17px;
+}
+.ftNav li a {
+    display: block;padding: 16px 18px; font-size: 13px; color: #ccc;
+    line-height: 13px;}
+    .container.footer .topMove a{display: block; line-height: 45px;padding-top: 11px;}
+    .container.footer .topMove img{margin: 0 auto;}
+
+    .container.ftBottom{padding: 20px 0;}
+    .container.ftBottom div{float: left;font-size: 13px; color: #ccc;}
+    .container.ftBottom .logo{width: 100px;height: 100px; text-align: center;line-height: 100px;}
+    .container.ftBottom .addr{}

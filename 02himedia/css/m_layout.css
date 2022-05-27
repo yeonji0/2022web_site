@@ -1,0 +1,14 @@
+@charset "utf-8"
+
+@media screen and (max-width:720px){
+    /* header */
+    #headerTopWrap .center{width: 100px;}
+    .headerTopWrap {display: none;}
+    #headerWrap .toggle{right: 16px;top: 16px;}
+    .mainMeneWrap{display: none;}
+    /* visaul */
+
+    /* banner Wrap */
+
+    /* container  */
+})
