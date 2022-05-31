@@ -8,11 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../03netmarble/css/reset.css">
+
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+
     <title>Document</title>
     <style>
         body{font-family: 'Noto Sans KR', sans-serif;}
+        .container{width: 1280px; margin: 0 auto;}
 
-        /* header */
+    
         .headerWrap{width: 1220px; margin: 0 auto; line-height: 76px;}
         .headerWrap h1{float: left;}
         .headerWrap img{width: 165px;}
@@ -21,17 +28,53 @@
         .navbar li{float:left; width: calc( 100% / 3 );}
         .navbar li a{display: block; text-align: center; font-size: 20px;}
 
+
         /* visual */
-        .visualWrap { background-image: url(images/img.jpg); margin-bottom: 160px;}
-        .visualWrap .visual{position: relative; height: 880px; margin: 0 auto;}
-        .visualWrap .visual .txt{position: absolute;
-            left: 300px; top: calc( 50% - 50px );
-            font-size: 20px;
-            color: #fff;}
-        .visualWrap .visual h1{
+        .visual {position: relative; height: 100vh; min-height: 800px;}
+        .visual .txtWrap{
+            position: absolute;
+            width: 1280px; left: 50%;
+            margin-left: -640px;
+            color: white; height: 100%;}
+        .visual .txtWrap .txt{position: absolute; top: 30%; }
+        .visual .txtWrap h1{
             font-size: 80px;
             line-height: 120px;}
-        .visualWrap .visual img{}
+        .visual .txtWrap p {font-size: 24px; margin-bottom: 15px;}
+       
+        .visual .slideItem{
+            height:100vh; min-height:800px;
+            background-color:orange;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .next,
+        .prev {position: absolute; top: 50%; margin-top: -50px; cursor: pointer;}
+
+        .next{right: 0;}
+        .visual li img{width: 100%;}
+
+        .bx-wrapper {
+            -moz-box-shadow: 0 0 0 #ccc;
+            -webkit-box-shadow: 0 0 0 #ccc;
+            box-shadow: 0 0 0 #ccc;
+            border: 0 none;
+            margin-bottom: 0;
+        }
+        .bx-wrapper .bx-pager{
+            bottom: 30px;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a:hover, 
+        .bx-wrapper .bx-pager.bx-default-pager a.active, 
+        .bx-wrapper .bx-pager.bx-default-pager a:focus {
+            background: #f00;
+        }
+
+    
+        
+
 
         /* container */
         .container {width: 1220px; margin: 0 auto;}
@@ -46,6 +89,23 @@
         .container.sec02 li p{font-size: 15px;}
 
     </style>
+   <script>
+    $(document).ready(function(){
+        var slide = $(".slide1").bxSlider({
+            auto:true,
+            controls:false
+        });
+
+        $(".next").click(function(){
+            slide.goToNextSlide();
+        });
+
+        $(".prev").click(function(){
+            slide.goToPrevSlide();
+        });
+
+    })
+</script>
 </head>
 <body>
     <header class="headerWrap clearfix">
@@ -58,13 +118,34 @@
             </ul>
         </nav>
     </header>
-        <div class="visualWrap">
-            <div class="visual">
-            <div class="txt cleafix">
-                <h1>견학프로그램</h1>
-                <p>나의 게임 산업 탐방기</p>
-            </div>
-            </div>
+        <div class="visual">
+            <ul class="slide1">
+                <li style="background-image: url(../03netmarble/images/img.jpg);" class="slideItem">
+                    <div class="txtWrap">
+                        <div class="txt">
+                            <h1>견학프로그램</h1>
+                            <p>나의 게임 산업 탐방기</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(../03netmarble/images/img.jpg);" class="slideItem">
+                    <div class="txtWrap">
+                        <div class="txt">
+                            <h1>견학프로그램</h1>
+                            <p>나의 게임 산업 탐방기</p>
+                        </div>
+                    </div>
+                </li>
+                <li style="background-image: url(../03netmarble/images/img.jpg);" class="slideItem">
+                    <div class="txtWrap">
+                        <div class="txt">
+                            <h1>견학프로그램</h1>
+                            <p>나의 게임 산업 탐방기</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
         </div>
     <section class="container sec01">
         <ul class="clearfix">
