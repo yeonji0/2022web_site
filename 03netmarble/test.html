@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Document</title>
+    <style>
+        body{font-family: 'Noto Sans KR', sans-serif;}
+
+        /* header */
+        .headerWrap{width: 1220px; margin: 0 auto; line-height: 76px;}
+        .headerWrap h1{float: left;}
+        .headerWrap img{width: 165px;}
+
+        .navbar {width: 510px; float: right; margin-top: 30px;}
+        .navbar li{float:left; width: calc( 100% / 3 );}
+        .navbar li a{display: block; text-align: center; font-size: 20px;}
+
+        /* visual */
+        .visualWrap { background-image: url(images/img.jpg); margin-bottom: 160px;}
+        .visualWrap .visual{position: relative; height: 880px; margin: 0 auto;}
+        .visualWrap .visual .txt{position: absolute;
+            left: 300px; top: calc( 50% - 50px );
+            font-size: 20px;
+            color: #fff;}
+        .visualWrap .visual h1{
+            font-size: 80px;
+            line-height: 120px;}
+        .visualWrap .visual img{}
+
+        /* container */
+        .container {width: 1220px; margin: 0 auto;}
+        .container.sec01 li{margin-bottom: 80px;}
+        .container.sec01 li h2{;
+            font-size: 44px; line-height: 62px; letter-spacing: -2px; }
+        .container.sec01 li p{float: right; font-size: 18px;line-height: 28px;letter-spacing: -0.6px;}
+
+        .container.sec02 {}
+        .container.sec02 li{ padding-right: 20px; float: left;}
+        .container.sec02 li h3{font-size: 21px; line-height: 32px;}
+        .container.sec02 li p{font-size: 15px;}
+
+    </style>
+</head>
+<body>
+    <div class="Wrap">
+        <nav class="container">
+            <h1><a href="#"><img src="images/logo.jpg" alt=""></a></h1>
+            <ul class="clearfix">
+                <li><a href="#">재단소개</a></li>
+                <li><a href="#">재단활동</a></li>
+                <li><a href="#">재단소식</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="visualWrap">
+            <div class="visual">
+            <div class="txt cleafix">
+                <h1>견학프로그램</h1>
+                <p>나의 게임 산업 탐방기</p>
+            </div>
+            </div>
+        </div>
+    <section class="container sec01">
+        <ul class="clearfix">
+            <li>
+                <h2>문화를 만들고 인재를 키우고 <br> 마음을 나눕니다</h2>
+                <p>넷마블문화재단은 문화적 가치 확상을 통해 우리 사회의 미래 경쟁력을 높여 가고자 
+                    <br> 다양한 공익활동을 전개해 나가고 있습니다.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section class="container sec02">
+        <ul class="clearfix">
+            <li>
+                <img src="images/link01.jpg" alt="">
+                <div class="txt">
+                    <h3>문화만들기</h3>
+                    <p>게임을 기반으로 어쩌궁 <br> 만들어 갑니다.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/link01.jpg" alt="">
+                <div class="txt">
+                    <h3>문화만들기</h3>
+                    <p>게임을 기반으로 어쩌궁 <br> 만들어 갑니다.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/link01.jpg" alt="">
+                <div class="txt">
+                    <h3>문화만들기
+                    </h3>
+                    <p>게임을 기반으로 어쩌궁 <br> 만들어 갑니다.</p>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+</body>
+</html>
