@@ -5,3 +5,5 @@ li{list-style: none;}
 .clearfix:after{content:"";display: block;clear: both;}
 a:link, a:visited{text-decoration: none; color:#939393}
 img{display: block;}
+
+body{font-family: 'Noto Sans KR', sans-serif;}

@@ -7,88 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../03netmarble/css/reset.css">
-
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
-
-
-    <title>Document</title>
-    <style>
-        body{font-family: 'Noto Sans KR', sans-serif;}
-        .container{width: 1280px; margin: 0 auto;}
-
-    
-        .headerWrap{width: 1220px; margin: 0 auto; line-height: 76px;}
-        .headerWrap h1{float: left;}
-        .headerWrap img{width: 165px;}
-
-        .navbar {width: 510px; float: right; margin-top: 30px;}
-        .navbar li{float:left; width: calc( 100% / 3 );}
-        .navbar li a{display: block; text-align: center; font-size: 20px;}
-
-
-        /* visual */
-        .visual {position: relative; height: 100vh; min-height: 800px;}
-        .visual .txtWrap{
-            position: absolute;
-            width: 1280px; left: 50%;
-            margin-left: -640px;
-            color: white; height: 100%;}
-        .visual .txtWrap .txt{position: absolute; top: 30%; }
-        .visual .txtWrap h1{
-            font-size: 80px;
-            line-height: 120px;}
-        .visual .txtWrap p {font-size: 24px; margin-bottom: 15px;}
-       
-        .visual .slideItem{
-            height:100vh; min-height:800px;
-            background-color:orange;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .next,
-        .prev {position: absolute; top: 50%; margin-top: -50px; cursor: pointer;}
-
-        .next{right: 0;}
-        .visual li img{width: 100%;}
-
-        .bx-wrapper {
-            -moz-box-shadow: 0 0 0 #ccc;
-            -webkit-box-shadow: 0 0 0 #ccc;
-            box-shadow: 0 0 0 #ccc;
-            border: 0 none;
-            margin-bottom: 0;
-        }
-        .bx-wrapper .bx-pager{
-            bottom: 30px;
-        }
-        .bx-wrapper .bx-pager.bx-default-pager a:hover, 
-        .bx-wrapper .bx-pager.bx-default-pager a.active, 
-        .bx-wrapper .bx-pager.bx-default-pager a:focus {
-            background: #f00;
-        }
-
-    
-        
-
-
-        /* container */
-        .container {width: 1220px; margin: 0 auto;}
-        .container.sec01 li{margin-bottom: 80px;}
-        .container.sec01 li h2{;
-            font-size: 44px; line-height: 62px; letter-spacing: -2px; }
-        .container.sec01 li p{float: right; font-size: 18px;line-height: 28px;letter-spacing: -0.6px;}
-
-        .container.sec02 {}
-        .container.sec02 li{ padding-right: 20px; float: left;}
-        .container.sec02 li h3{font-size: 21px; line-height: 32px;}
-        .container.sec02 li p{font-size: 15px;}
-
-    </style>
+    <title>넷마블문화재단</title>
+   
    <script>
     $(document).ready(function(){
         var slide = $(".slide1").bxSlider({
@@ -105,6 +30,9 @@
         });
 
     })
+
+    
+
 </script>
 </head>
 <body>
@@ -120,7 +48,7 @@
     </header>
         <div class="visual">
             <ul class="slide1">
-                <li style="background-image: url(../03netmarble/images/img.jpg);" class="slideItem">
+                <li style="background-image: url(images/img.jpg);" class="slideItem">
                     <div class="txtWrap">
                         <div class="txt">
                             <h1>견학프로그램</h1>
@@ -128,7 +56,7 @@
                         </div>
                     </div>
                 </li>
-                <li style="background-image: url(../03netmarble/images/img.jpg);" class="slideItem">
+                <li style="background-image: url(images/img.jpg);" class="slideItem">
                     <div class="txtWrap">
                         <div class="txt">
                             <h1>견학프로그램</h1>
@@ -136,7 +64,7 @@
                         </div>
                     </div>
                 </li>
-                <li style="background-image: url(../03netmarble/images/img.jpg);" class="slideItem">
+                <li style="background-image: url(images/img.jpg);" class="slideItem">
                     <div class="txtWrap">
                         <div class="txt">
                             <h1>견학프로그램</h1>
@@ -147,43 +75,48 @@
             </ul>
             
         </div>
-    <section class="container sec01">
-        <ul class="clearfix">
-            <li>
-                <h2>문화를 만들고 인재를 키우고 <br> 마음을 나눕니다</h2>
-                <p>넷마블문화재단은 문화적 가치 확상을 통해 우리 사회의 미래 경쟁력을 높여 가고자 
-                    <br> 다양한 공익활동을 전개해 나가고 있습니다.
-                </p>
-            </li>
-        </ul>
+    <section class="boxWrap">
+            <div class="txtWrap">
+                    <ul class="clearfix">
+                        <li>
+                            <h2>문화를 만들고 인재를 키우고 <br> 마음을 나눕니다</h2>
+                            <img src="/images/icon.png" alt="">
+                            <p>넷마블문화재단은 문화적 가치 확상을 통해 우리 사회의 미래 경쟁력을 높여 가고자
+                                <br> 다양한 공익활동을 전개해 나가고 있습니다. </p>
+                        </li>
+                    </ul>
+            </div>
     </section>
-    <section class="container sec02">
-        <ul class="clearfix">
-            <li>
-                <img src="images/link01.jpg" alt="">
-                <div class="txt">
-                    <h3>문화만들기</h3>
-                    <p>게임을 기반으로 어쩌궁 <br> 만들어 갑니다.</p>
-                </div>
-            </li>
-            <li>
-                <img src="images/link01.jpg" alt="">
-                <div class="txt">
-                    <h3>문화만들기</h3>
-                    <p>게임을 기반으로 어쩌궁 <br> 만들어 갑니다.</p>
-                </div>
-            </li>
-            <li>
-                <img src="images/link01.jpg" alt="">
-                <div class="txt">
-                    <h3>문화만들기
-                    </h3>
-                    <p>게임을 기반으로 어쩌궁 <br> 만들어 갑니다.</p>
-                </div>
-            </li>
-        </ul>
-
-    </section>
-
+        <div class="container cont1st">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="images/link01.jpg" alt="">
+                        <div class="card-body">
+                            <h3>문화만들기</h3>
+                            <p>게임을 기반으로 어쩌궁 <br> 만들어 갑니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/link01.jpg" alt="">
+                        <div class="card-body">
+                            <h3>문화만들기</h3>
+                            <p>게임을 기반으로 어쩌궁 <br> 만들어 갑니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="images/link01.jpg" alt="">
+                        <div class="card-body">
+                            <h3>문화만들기</h3>
+                            <p>게임을 기반으로 어쩌궁 <br> 만들어 갑니다.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
 </body>
 </html>
