@@ -153,11 +153,12 @@
 .boxnewsWrap { background-color: #ddd;padding: 160px 0;}
 .boxnewsWrap h3 a {
     font-size: 45px; color: #1E1E1E;
+    margin-bottom: 20px;
+    
     }
 .boxnews li{
     float: left; 
     width: calc( ( 100% - 20px * 2 ) / 3 ); height: 465px;
-    margin-right: 20px;
 }
 .boxnews li:last-child{margin-right: 0;}
 .boxnews li:hover {
@@ -170,3 +171,20 @@
     width: 100%;
     padding: 16px 20px; }
 .card-body h3{margin-bottom: 10px;}
+
+
+/* footer */
+.footerWrap{
+    padding: 20px;
+    background-color: #171717;}
+.footerTop {margin-bottom: 50px;}
+.footerTop a{ font-size: 11px; } 
+
+.container.ftBottom .ftNav ul li{
+    font-size: 12px;
+    float: left; display: block; text-align: center;
+    line-height: 20px;
+    text-align: center; width: calc( 50% / 5 );
+    border-right: 1px solid #E1E1E1;}
+    
+.container.ftBottom .ftNav ul li:last-child{border-right: none;}
