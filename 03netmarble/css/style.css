@@ -159,6 +159,7 @@
     content:"";display: block;width: 100px;height: 5px;
     background-color:#ffd44a;margin:20px 20px;
     }
+
 .boxnews li{
     float: left; 
     width: calc( ( 100% - 20px * 2 ) / 3 ); height: 465px;
