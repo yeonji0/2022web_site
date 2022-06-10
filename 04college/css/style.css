@@ -22,8 +22,8 @@
     display: block; text-align: center; line-height: 40px;
 }
 .headerMenu_2 li a {color: white;}
-.headerMenu_2 li:nth-child(2){background-color:white;}
-.headerMenu_2 li:nth-child(3){background-color:white;}
+.headerMenu_2 li:nth-child(2){background-color:white; color: #000;}
+.headerMenu_2 li:nth-child(3){background-color:white; color: #000;}
 
 .navbarCmenu{float:left;}
 .navbarUtilm ul{ float: right;} 
