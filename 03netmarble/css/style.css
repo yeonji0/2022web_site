@@ -161,15 +161,25 @@
     background-color:#ffd44a;margin:20px 20px;
     }
 
-.container.newsWrap ul{float: right;}
-.container.newsWrap ul li{float: left;}
+.container.newsWrap ul{
+    float: right; 
+    background-color: #f0f1f2;
+    margin-bottom: 20px;
+}
+.container.newsWrap ul li{
+    width: 100px; height: 38px;
+    float: left; 
+    display: block; text-align: center; line-height: 35px;
+    font-size: 14px;
+    border-radius: 5px;
+}
 
 
 
 .boxnews li{
     float: left; 
     width: calc( ( 100% - 20px * 2 ) / 3 ); height: 465px;
-    padding: 20PX;
+    padding: 20PX; 
 }
 .boxnews li:last-child{margin-right: 0;}
 .boxnews li:hover {
