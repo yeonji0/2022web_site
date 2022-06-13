@@ -7,9 +7,24 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+
     <title>동명대학교</title>
+    <script>
+        $(document).ready(function(){
+            $(".slide").bxSlider({
+                controls:false
+            })
+        });
+        $(".next").click(function(){
+                slide.goToNextSlide();
+            });
+            $(".prev").click(function(){
+                slide.goToPrevSlide();
+            });
+    </script>
 </head>
 <body>
     <header class="headerTopWrap">
@@ -58,8 +73,39 @@
         </div>
         <div class="sec2st container">
             <ul class="clearfix">
-                <li><h1> 동명에서 <br> 시작하는 <br> 새로운 꿈</h1></li>
-                <li><h2> APP으로 <br> 스마트 도서관 <br> 바로 이용하자!<h2> <h3>모바일 열람증은 <br> 도서관 / 도서대출 등에 <br> 사용할 수 있습니다. </h3></li>
+                <li>
+                    <ul class="slide">
+                        <li>
+                                <div class="txt">
+                                    <h2> 동명에서 <br> 시작하는 <br> 새로운 꿈</h2>
+                                    <a href="#">자세히보기</a>
+                                </div>
+                                <img src="images/bx1.png" alt="">
+                        </li>
+                        <li>
+                            <div class="txt">
+                                <h2> 동명에서 <br> 시작하는 <br> 새로운 꿈</h2>
+                                <a href="#">자세히보기</a>
+                            </div>
+                            <img src="images/bx1.png" alt="">
+                    </li>
+                    </ul>
+                    <div class="next">
+                        <img src="images/next.png" alt="">
+                    </div>
+                    <div class="prev">
+                        <img src="images/prev.png" alt="">
+                    </div>
+                </li>
+                
+                <li>
+                    
+                        <div class="txt">
+                            <h2> APP으로 <br> 스마트 도서관 <br> 바로 이용하자!<h2>
+                            <p>모바일 열람증은 <br> 도서관 / 도서대출 등에 <br> 사용할 수 있습니다. </p>
+                        </div>
+                   
+                </li>
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
