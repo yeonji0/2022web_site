@@ -17,16 +17,21 @@
     <title>동명대학교</title>
     <script>
         $(document).ready(function(){
-            $(".slide").bxSlider({
-                controls:false
-            })
+        var slide = $(".slide1").bxSlider({
+            controls:false
         });
+        
         $(".next").click(function(){
-                slide.goToNextSlide();
-            });
-            $(".prev").click(function(){
-                slide.goToPrevSlide();
-            });
+            slide.goToNextSlide();
+        });
+        $(".prev").click(function(){
+            slide.goToPrevSlide();
+        });
+        
+        $(".slide2").bxSlider(
+            {controls:false}
+        );
+    });
     </script>
 </head>
 <body>
@@ -77,18 +82,18 @@
         <div class="sec2st container">
             <ul class="slideWrap">
                 <li>
-                    <ul class="slide">
+                    <ul class="slide1">
                         <li>
                                 <div class="txt">
                                     <h2> 동명에서 <br> 시작하는 <br> 새로운꿈</h2>
-                                    <a href="#">자세히보기</a>
+                                    <a href="#" class="btn">자세히보기</a>
                                 </div>
                                 <img src="images/bx1.png" alt="">
                         </li>
                         <li>
                             <div class="txt">
                                 <h2> 동명에서 <br> 시작하는 <br> 새로운꿈</h2>
-                                <a href="#">자세히보기</a>
+                                <a href="#" class="btn">자세히보기</a>
                             </div>
                             <img src="images/bx1.png" alt="">
                         </li>
@@ -107,7 +112,7 @@
                                 <div class="txt">
                                     <h3> APP으로 <br> 스마트 도서관 <br> 바로 이용하자!</h3>
                                     <p>모바일 열람증은 <br> 도서관 / 도서대출 등에 <br> 사용할 수 있습니다. </p>
-                                    <a href="#">자세히보기</a>
+                                    <a href="#" class="btn">자세히보기</a>
                                 </div>
                             </li>
                         </ul>
@@ -129,23 +134,64 @@
                         </li>
                     </ul>
                 </li>
-                <li>4</li>
+                <li>
+                    <h3>공지사항</h3>
+                    <ul class="bar">
+                        <div class="notice">
+                        <li><p> [공지] 동명 대학교 웹진... <span>22.06.15</span></p></li>
+                        <li><p> [보도]] 우수대학교 선정 수상 <span>22.06.15</span></p></li>
+                        <li><p> [공지] 대학입시 설명회 <span>22.06.15</span></p></li>
+                        <li><p> [공지] 2021년 1학기 성적... <span>22.06.15</span></p></li>
+                        </div>
+                    </ul>
+                </li>
                 <li>
                     <ul class="snsWrap">
                         <h3>SNS NEWS</h3>
-                        <li>
-                            <img src="/04college/images/sns.jpg" alt="">
-                            <p>동명대학교는 <br>2022학년도 신입생<br>입학식을 3월 2일 (목) <br> 본교 종합체육관...</p>
-                        </li>
+                        <ul class="bar">
+                            <li>
+                                <img src="/04college/images/sns.jpg" alt="">
+                                <p>동명대학교는 <br>2022학년도 신입생<br>입학식을 3월 2일 (목) <br> 본교 종합체육관...</p>
+                                <a href="#" class="btn">d</a>
+                                <a href="#" class="btn">d</a>
+                                <a href="#" class="btn">d</a>
+                                <a href="#" class="btn">d</a>
+                            </li>
+                        </ul>
                     </ul>
                 </li>
                 <li>
                     <div class="tourWrap">
-                       <p>캠퍼스투어</p>
+                        <img src="../04college/images/box_04.png" alt="">
+                        <a href="#" class="btn"> 캠퍼스 투어</a>
                     </div>
                 </li>
-                <li>7</li>
-                <li>8</li>
+                <li>
+                        <img src="../04college/images/box07.jpg.png" alt="">
+                        <div class="move">
+                            <img src="images/play02.png" alt="">
+                        </div>
+                </li>
+                <li>
+                    <ul class="slide2">
+                        <li class="slideItem">
+                            <div class="last">
+                                <h4> 2022년 신·편입신입생 2차 모집</h4>
+                                <h3> 2022.6.8 ~ 6.18</h3>
+                                <a href="#" class="box">입학사전 예약</a>
+                            </div>
+                            <img src="/04college/images/box_03.png" alt="">
+                        </li>
+                        <li class="slideItem">
+                            <div class="last">
+                                <h4> 2022년 신·편입신입생 2차 모집</h4>
+                                <h3> 2022.6.8 ~ 6.18</h3>
+                                <a href="#" class="box">입학사전 예약</a>
+                            </div>
+                            <img src="/04college/images/box_03.png" alt="">
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
         </div>
