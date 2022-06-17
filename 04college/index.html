@@ -8,10 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../04college/css/colorbox.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="../04college/js/jquery.colorbox-min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
 
     <title>동명대학교</title>
@@ -31,6 +33,12 @@
         $(".slide2").bxSlider(
             {controls:false}
         );
+
+        $(".youtube").colorbox({
+            iframe:true,
+            innerWidth:700,
+            innerHeight:394
+        })
     });
     </script>
 </head>
@@ -152,11 +160,13 @@
                             <li>
                                 <img src="/04college/images/sns.jpg" alt="">
                                 <p>동명대학교는 <br>2022학년도 신입생<br>입학식을 3월 2일 (목) <br> 본교 종합체육관...</p>
-                                <a href="#" class="btn">d</a>
-                                <a href="#" class="btn">d</a>
-                                <a href="#" class="btn">d</a>
-                                <a href="#" class="btn">d</a>
                             </li>
+                            <div class="btnWrap">
+                                <a href="#" class="btn"></a>
+                                <a href="#" class="btn"></a>
+                                <a href="#" class="btn"></a>
+                                <a href="#" class="btn"></a>
+                            </div>
                         </ul>
                     </ul>
                 </li>
@@ -169,7 +179,7 @@
                 <li>
                         <img src="../04college/images/box07.jpg.png" alt="">
                         <div class="move">
-                            <img src="images/play02.png" alt="">
+                        <a href="https://www.youtube.com/embed/2YlhtpwB0XM" class="youtube">  <img src="images/play02.png" alt=""></a>
                         </div>
                 </li>
                 <li>
@@ -197,6 +207,29 @@
         </div>
 
     </section>
+<footer>
+<div class="footerWrap">
+        <div class="footerTop">
+            <div class="container footer">
+                <div class="logo"><img src="../04college/images/dm02.png" alt=""></div>  
+            </div>
+            
+            <div class="container ftBottom">
+                <nav class="ftnav">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">동명 대학교</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용정책</a></li>
+                        <li><a href="#">입점/제휴문의 및 광고</a></li>
+                        <li><a href="#">이메일 무단수집거부</a></li>
+                    </ul>
+                </nav>
+                <p>대표자:홍길동 서울특별시구로구 구로로 300(구로동6가) 사업자등록번호 : 123-5674-6555 <br> 통신판매업 신고번호 : 제 1234 -서울 구로구- 1004호 개인정보관리 책임자 : 홍길동 소비자피해보상보험 <br> 고객센터 :1234-5674 FAX: 02-5485-2655 TONGMYONG@TONGMYONG.COM</p> 
+            </div>
+        </div>
+</div>
     
+</footer>
 </body>
 </html>
