@@ -5,42 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>여행박사</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="scc/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="headerTop">
-            <div class="hdlogo">
-                <img src="images/logo.png" alt="">
-            </div>
-            <div class="icon">
-                <p>+82 02 1234 5678</p>
-                <a href="#"><img src="images/icon01.png" alt=""></a>
-                <a href="#"><img src="images/icon02.png" alt=""></a>
-                <a href="#"><img src="images/icon03.png" alt=""></a>
-                <a href="#"><img src="images/icon04.png" alt=""></a>
+    <header class="header">
+        <div class="hdTopWrap">
+            <div class="headerTop">
+                <div class="hdlogo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="scWrap">
+                    <p class="title">SEARCH</p>
+                    <form action="#">
+                        <input type="text" name="search" placeholder="검색어를 입력하세요" class="inp">
+                    </form>
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="iconmenu">
+                    <p>+82 02 1234 5678</p>
+                    <a href="#"><img src="images/icon01.png" alt=""></a>
+                    <a href="#"><img src="images/icon02.png" alt=""></a>
+                    <a href="#"><img src="images/icon03.png" alt=""></a>
+                    <a href="#"><img src="images/icon04.png" alt=""></a>
+                </div>
             </div>
         </div>
 
-        <div class="headerBottom">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">여행도시</a></li>
-                    <li><a href="#">호텔예약</a></li>
-                    <li><a href="#">렌트카</a></li>
-                    <li><a href="#">여행TIP</a></li>
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">커뮤니티</a></li>
-                </ul>
-            </nav>
+        <div class="hdbottomWrap">
+            <div class="headerBottom">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">여행도시</a></li>
+                        <li><a href="#">호텔예약</a></li>
+                        <li><a href="#">렌트카</a></li>
+                        <li><a href="#">여행TIP</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="totalWrap">
+        <img src="images/airplain2.png" alt="" class="air">
+        <div class="visualWrap">
+            <div class="visualTop">
+                <div class="boxWrap">
+                    <div class="box01">
+                        <p>ddd</p>
+                    </div>
+                    <div class="box02">
+                        <h1> <span>TRAVEL</span> <span>GO</span></h1> 
+                        <h2> 지금, 여행이 떠나고 싶다면? <br> 여행박사와 함께 떠나요! </h2>
+                    </div>
+                </div>
+                <div class="tourWrap">
+                    <div class="tour01">
+                        <img src="images/Layer 1.png" alt="">
+                    </div>
+                    <div class="tour02">
+                        <img src="images/Layer 1.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
