@@ -119,9 +119,56 @@ body {
 }
 .box01{
     width: 490px;height: 300px;
-    background-color: green;
     margin-bottom: 20px;
+    position: relative;
 }
+.slideWrap{width: 340px; position: absolute; right: 0;}
+.slideWrap .sItem{width: 100%; height: 300px; background: pink; padding: 15px;}
+.slide fieldset{border: 0 none}
+.slide .blind{display: block; position: absolute; left: 0; top: -9999px;}
+
+.field label{display: block;}
+.field select{
+    width: 300px; height: 30px;
+    padding: 0 10px;
+}
+.field select:focus{outline: none;}
+.field.date,.field.air{display: flex; position: relative;}
+
+.field div{ }
+.field .inp-field{
+    width: 100%; font-size: 10px; height: 30px;
+    text-align: center; padding: 10px;
+    border: 1px solid #000;
+}
+.field.date .inp-field:focus{outline: none;}
+
+
+
+.slideTap{
+    position: absolute;
+    left: 0; top: 0;
+    width: 150px; height: 100%;}
+.slideTap a.active{
+    background-color: #FF9545; color:white
+}
+.slideTap a{
+    background: #F9F5F2;
+    height:calc( 100% / 4 );
+    display: flex;justify-content: center; align-items: center;
+}
+.slideTap a:hover{background-color: #FF6D00;color:white}
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0px #ccc;
+    -webkit-box-shadow: 0 0 0px #ccc;
+    box-shadow: 0 0 0px #ccc;
+    border: 0px none;
+    margin-bottom: 0;;
+}
+
+
+
+
 .box02{
     width: 480px;height: 300px;
 }
