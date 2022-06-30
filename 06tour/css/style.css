@@ -137,14 +137,14 @@ body {
 
 .field div{ }
 .field .inp-field{
-    width: 100%; font-size: 10px; height: 30px;
+    width: 100%; font-size: 10px; 
     text-align: center; padding: 10px;
     border: 1px solid #000;
 }
 .field.date .inp-field:focus{outline: none;}
 
 
-
+.slideTap i{font-size: 20px; padding: 10px;}
 .slideTap{
     position: absolute;
     left: 0; top: 0;
