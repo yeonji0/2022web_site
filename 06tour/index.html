@@ -10,23 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.css" integrity="sha512-wMTbLMebj4OAT4mU2nV6XvE8QuTHOrwPKNaGuGF2wiaNU9IHea/bgJcKP/DtG+c3+LbNu54evMgWOWPvN/7iDQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+   
     <script>
          $(document).ready(function(){
             var slide = $(".slide").bxSlider({
                 controls:false,
                 pagerCustom:".slideTap",
-                mode:"vertical"
-                
+                mode:"vertical",
+                touchEnabled:false
             });
 
             $("btnNext").click(function(){
@@ -134,17 +136,19 @@
                                                 <div>
                                                     <label for="userseat">좌석등급</label>
                                                     <select name="userseat" id="userseat">
+                                                        <option value=""></option>
                                                         <option value="퍼스트 클래스">퍼스트 클래스</option>
                                                         <option value="비즈니스">비즈니스</option>
                                                         <option value="이코노미">이코노미</option>
                                                     </select>
+                                                </div>
                                                     <div>
                                                         <label for="usernum">인원</label>
                                                         <input type="number" name="usernum" id="usernum" class="inp-field">
-                                                    </div>
-                                                </div>
+                                                    </div>        
                                             </div>
                                         </fieldset>
+                                        <button type="text" class="btn-click"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
                                     </form>
                                 </li>
                                 <li class="sItem">
@@ -176,17 +180,19 @@
                                                 <div>
                                                     <label for="userseat">좌석등급</label>
                                                     <select name="userseat" id="userseat">
+                                                        <option value=""></option>
                                                         <option value="퍼스트 클래스">퍼스트 클래스</option>
                                                         <option value="비즈니스">비즈니스</option>
                                                         <option value="이코노미">이코노미</option>
                                                     </select>
+                                                </div>
                                                     <div>
                                                         <label for="usernum">인원</label>
                                                         <input type="number" name="usernum" id="usernum" class="inp-field">
-                                                    </div>
-                                                </div>
+                                                    </div>        
                                             </div>
                                         </fieldset>
+                                        <button type="text" class="btn-click"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
                                     </form>
                                 </li>
                                 <li class="sItem">
@@ -218,17 +224,19 @@
                                                 <div>
                                                     <label for="userseat">좌석등급</label>
                                                     <select name="userseat" id="userseat">
+                                                        <option value=""></option>
                                                         <option value="퍼스트 클래스">퍼스트 클래스</option>
                                                         <option value="비즈니스">비즈니스</option>
                                                         <option value="이코노미">이코노미</option>
                                                     </select>
+                                                </div>
                                                     <div>
                                                         <label for="usernum">인원</label>
                                                         <input type="number" name="usernum" id="usernum" class="inp-field">
-                                                    </div>
-                                                </div>
+                                                    </div>        
                                             </div>
                                         </fieldset>
+                                        <button type="text" class="btn-click"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
                                     </form>
                                 </li>
                                 <li class="sItem">
@@ -260,19 +268,22 @@
                                                 <div>
                                                     <label for="userseat">좌석등급</label>
                                                     <select name="userseat" id="userseat">
+                                                        <option value=""></option>
                                                         <option value="퍼스트 클래스">퍼스트 클래스</option>
                                                         <option value="비즈니스">비즈니스</option>
                                                         <option value="이코노미">이코노미</option>
                                                     </select>
+                                                </div>
                                                     <div>
                                                         <label for="usernum">인원</label>
                                                         <input type="number" name="usernum" id="usernum" class="inp-field">
-                                                    </div>
-                                                </div>
+                                                    </div>        
                                             </div>
                                         </fieldset>
+                                        <button type="text" class="btn-click"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
                                     </form>
                                 </li>
+                               
                             </ul>
                         </div>
 
@@ -348,6 +359,25 @@
                             <p>이용후기</p>
                             <div class="blind"><img src="../06tour/images/Layer 1.png" alt=""></div>
                         </li>
+                        
+                    </ul>
+                    <ul>
+                        <li style="background-image: url(images/box02.jpg)">
+                            <p>사이판 골프</p>
+                            <div class="blind"><img src="../06tour/images/Layer 1.png" alt=""></div>
+                        </li>
+                        <li style="background-image: url(images/box02.jpg)">
+                            <p>사이판 골프</p>
+                            <div class="blind"><img src="../06tour/images/Layer 1.png" alt=""></div>
+                        </li>
+                        <li style="background-image: url(images/box02.jpg)">
+                            <p>사이판 골프</p>
+                            <div class="blind"><img src="../06tour/images/Layer 1.png" alt=""></div>
+                        </li>
+                        <li style="background-image: url(images/box02.jpg)">
+                            <p>사이판 골프</p>
+                            <div class="blind"><img src="../06tour/images/Layer 1.png" alt=""></div>
+                        </li>
                     </ul>
                 </div>
 
@@ -365,5 +395,25 @@
         },
       });
     </script>
+
+    <footer>
+        <div class="footerWrap">
+            <div class="ftTop">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+                    <p>
+                        <a href="#">이용약관<span></span></a>
+                        <a href="#">개인정보취급방침<span></span></a>
+                        <a href="#">사이트맵<span></span></a>
+                        <a href="#">고객센터<span></span></a>
+                        <a href="#">광고 및 제휴 문의</a>
+                    </p>
+            </div>
+    
+            <div class="ftadd"> 
+                    <p>123-456 서울특별시 구로구 구로동 (주) 하이미디어 사업지등록번호 : 123-4558-56596 대표이사 : 홍길동 대표번호 : 02-4855-05965</p>
+                    <p>Copyrightⓒ NHN Doctortour Corp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
