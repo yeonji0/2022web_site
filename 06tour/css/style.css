@@ -65,6 +65,7 @@ body {
     color: #fff;
     letter-spacing: 2px;
 }
+.navbar a:hover{background: #ccc; color: #FF6D00;}
 
 /* visual */
 
@@ -278,12 +279,12 @@ transition: 0.3s;
     display: flex; justify-content: center;align-items: center;
     color: #fff;
 }
+.tourboxWrap h4{font-size: 13px; position: absolute; left: 10px; top: 35px; line-height: 20px;}
 .tourboxWrap .wBox{overflow: hidden;}
 .tourboxWrap .txtWrap{
     padding: 10px 20px;
     width: 100%;height: 100%;
     position: absolute;
-    
     transition: 0.3s;
     background-color: rgba(255,178,120,0.5);
     left: 0;top:180px
@@ -300,6 +301,41 @@ transition: 0.3s;
 .tourboxWrap .wBox:hover .txtWrap a{
     display: flex; justify-content: center; align-items: center;
 }
+
+
+.bottomboxWrap .box{
+    position: absolute;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3);
+    display: block;
+    font-size: 18px;
+}
+
+.bottomboxWrap h3 {margin-top: 20%;}
+.circle{
+    width: 30px;height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate( -50% , -50%);
+    transition: 0.3s;
+    display: flex; justify-content: center; align-items: center;
+}
+.circle::before,
+.circle:after{
+    content: "";display: block;
+    width: 10px;height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;        
+}
+.circle:after{transform: rotate(90deg);}
+.box:hover .circle{
+    transform: translate( -50% , -50%) rotate(90deg);
+    
+}
+
 
 
 .swiper{
@@ -331,26 +367,30 @@ transition: 0.3s;
     font-size: 15px;
   }
 
+
+
   
   /* footer */
-  .footerWrap{ width: 100%;height: 200px; margin: 0 auto; background-color: pink;}
+  .footerWrap{ width: 100%;height: 250px; margin: 0 auto; background-color:#F9F5F2;}
   .ftTop{
     width: 1000px; margin: 0 auto;
     position: relative;
     height: 60px; padding: 20px;
+    margin-bottom: 20px;
 }
-.ftTop img{width: 200px;height: 100%;}
+.ftTop img{width: 200px;height: 40px; position: absolute;}
 .ftTop p{
     width: 100%;
     float: left; 
     position: absolute;
-    left: 25%; top: 30%;
+    left: 25%; top: 50%;
 }
-.ftTop a{float: left;}
+.ftTop a{float: left; }
 .ftTop p span::after{content: ''; width: 2px; height: 12px; background: #7a7f85; display: inline-block; margin: 0 18px;}
 
 
 .ftadd{width: 1000px;margin: 0 auto;}
 .ftadd p{
     width: 100%; height: 100%;
+    line-height: 30px;
 }
