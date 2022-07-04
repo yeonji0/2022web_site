@@ -28,7 +28,8 @@
                 controls:false,
                 pagerCustom:".slideTap",
                 mode:"vertical",
-                touchEnabled:false
+                touchEnabled:false,
+                infiniteLoop: false
             });
 
             $("btnNext").click(function(){
@@ -39,7 +40,7 @@
             });
         });
         $(document).ready(function(){
-            $("#sdate, #edate").datepicker({
+            $("#sdate01, #edate01,#sdate02, #edate02,#sdate03, #edate03,#sdate04, #edate04").datepicker({
                 dateFormat:'yy.mm.dd',
                 dateFormat: 'yy.mm.dd',
                 prevText: '이전 달',
@@ -85,7 +86,7 @@
             <div class="headerBottom">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="#">여행도시</a>
+                        <li><a href="subpage.html" class="active">여행도시</a>
                             <div class="submenu">
                                 <ul class="clearfix">
                                     <li><a href="#">동남아</a></li>
@@ -134,9 +135,6 @@
     </header>
     
     <div class="totalWrap">
-        <img src="images/content2.png" alt="" class="con">
-        <img src="images/content5.png" alt="" class="cont">
-        <img src="images/content1.png" alt="" class="contt">
         <div class="visualWrap">
             <div class="visualTop">
                 <div class="boxWrap">
@@ -159,13 +157,13 @@
                                             </div>
                                             <div class="field date">
                                                 <div class="left">
-                                                    <label for="sdate">출발일</label>
-                                                    <input type="text" id="sdate" class="inp-field">
+                                                    <label for="sdate01">출발일</label>
+                                                    <input type="text" id="sdate01" class="inp-field">
                                                 </div>
 
                                                 <div class="right">
-                                                    <label for="edate">도착일</label>
-                                                    <input type="text" id="edate" class="inp-field">
+                                                    <label for="edate01">도착일</label>
+                                                    <input type="text" id="edate01" class="inp-field">
                                                 </div>
                                             </div>
                                             <div class="field air">
@@ -203,13 +201,13 @@
                                             </div>
                                             <div class="field date">
                                                 <div class="left">
-                                                    <label for="sdate">출발일</label>
-                                                    <input type="text" id="sdate" class="inp-field">
+                                                    <label for="sdate02">출발일</label>
+                                                    <input type="text" id="sdate02" class="inp-field">
                                                 </div>
 
                                                 <div class="right">
-                                                    <label for="edate">도착일</label>
-                                                    <input type="text" id="edate" class="inp-field">
+                                                    <label for="edate02">도착일</label>
+                                                    <input type="text" id="edate02" class="inp-field">
                                                 </div>
                                             </div>
                                             <div class="field air">
@@ -247,13 +245,13 @@
                                             </div>
                                             <div class="field date">
                                                 <div class="left">
-                                                    <label for="sdate">출발일</label>
-                                                    <input type="text" id="sdate" class="inp-field">
+                                                    <label for="sdate03">출발일</label>
+                                                    <input type="text" id="sdate03" class="inp-field">
                                                 </div>
 
                                                 <div class="right">
-                                                    <label for="edate">도착일</label>
-                                                    <input type="text" id="edate" class="inp-field">
+                                                    <label for="edate03">도착일</label>
+                                                    <input type="text" id="edate03" class="inp-field">
                                                 </div>
                                             </div>
                                             <div class="field air">
@@ -291,13 +289,13 @@
                                             </div>
                                             <div class="field date">
                                                 <div class="left">
-                                                    <label for="sdate">출발일</label>
-                                                    <input type="text" id="sdate" class="inp-field">
+                                                    <label for="sdate04">출발일</label>
+                                                    <input type="text" id="sdate04" class="inp-field">
                                                 </div>
 
                                                 <div class="right">
-                                                    <label for="edate">도착일</label>
-                                                    <input type="text" id="edate" class="inp-field">
+                                                    <label for="edate04">도착일</label>
+                                                    <input type="text" id="edate04" class="inp-field">
                                                 </div>
                                             </div>
                                             <div class="field air">
@@ -325,13 +323,16 @@
 
                         <div class="slideTap">
                             
-                            <a href="#" data-slide-index="0"><i class="fa-solid fa-plane-up"></i> 공항예약</a>
+                            <a href="#" data-slide-index="0"><i class="fa-solid fa-plane-up"></i> 항공예약</a>
                             <a href="#" data-slide-index="1"><i class="fa-solid fa-hotel"></i>호텔예약</a>
                             <a href="#" data-slide-index="2"><i class="fa-solid fa-car-side"></i>렌트카</a>
                             <a href="#" data-slide-index="3"><i class="fa-solid fa-champagne-glasses"></i>휴양지</a>
                         </div>
                     </div>
                     <div class="box02">
+                        <img src="images/content2.png" alt="" class="con">
+                        <img src="images/content5.png" alt="" class="cont">
+                        <img src="images/content1.png" alt="" class="contt">
                         <h1> <span>TRAVEL</span> <span>GO</span></h1> 
                         <h2> 지금, 여행이 떠나고 싶다면? <br> 여행박사와 함께 떠나요! </h2>
                     </div>

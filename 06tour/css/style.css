@@ -7,10 +7,10 @@ body {
     height: 100%;
 }
 .header{ 
-    position: absolute;
+    position: relative  ;
     width: 100%;
 }
-.hdTopWrap{width: 100%; background-color: #F9F5F2;}
+.hdTopWrap{width: 100%; background: #F9F5F2;}
 .headerTop{ 
     width: 1000px; height: 90px;
     margin: 0 auto;
@@ -94,7 +94,10 @@ body {
     color: #fff;
     letter-spacing: 2px;
 }
-.navbar a:hover{background: #ccc; color: #FF6D00;}
+.navbar a:hover{
+    background: #ccc; color: #FF6D00;
+    transition: 0.3s;
+}
 
 /* visual */
 
@@ -105,42 +108,13 @@ body {
     background-position: center;
     background-size: cover;
 }
-.con{
-    position: absolute;
-    width: 250px; height: 300px;
-    left: 60%; top: 50%;
-    animation: con 3s infinite alternate;
-}
-.cont{
-    position: absolute;
-    width: 400px; height: 400px;
-    left: 80%; top: 20%;
-    animation: con 2s infinite alternate;
-}
-.contt{
-    position: absolute;
-    width: 400px; height: 400px;
-    left: 0%; top: 20%;
-    animation: con 5s infinite alternate;
-}
-@keyframes air {
-    from{transform: translateX(30px);}
-    to{transform: translateX(0px);}
-}
-@keyframes con{
-    from{transform: translateY(30px);}
-    to{transform: translateY(0px);}
-}
-@keyframes contt{
-    from{transform: translateY(30px);}
-    to{transform: translateY(0px);}
-}
+
 
 .visualWrap{
     position: relative;
     width: 1000px;
     margin: 0 auto;
-    top: 15%;
+    top: 55px;
 }
 .visualTop{ }
 .boxWrap{
@@ -217,6 +191,7 @@ body {
 
 .box02{
     width: 480px;height: 300px;
+    position: relative;
 }
 .box02 h1{
     padding: 10px;
@@ -244,6 +219,38 @@ body {
     width: 100%; height: 100%;
     
 }
+.con{
+    position: absolute;
+    width: 250px; height: 300px;
+    left: calc(-10%); top: calc(80%); 
+    animation: con 3s infinite alternate;
+}
+.cont{
+    position: absolute;
+    width: 400px; height: 400px;
+    left: calc(80%); top: calc(20%);
+    animation: con 2s infinite alternate;
+}
+.contt{
+    position: absolute;
+    width: 400px; height: 400px;
+    left: calc(-200%);
+    animation: con 5s infinite alternate;
+}
+@keyframes air {
+    from{transform: translateX(30px);}
+    to{transform: translateX(0px);}
+}
+@keyframes con{
+    from{transform: translateY(30px);}
+    to{transform: translateY(0px);}
+}
+@keyframes contt{
+    from{transform: translateY(30px);}
+    to{transform: translateY(0px);}
+}
+
+
 
 
 
@@ -426,4 +433,49 @@ transition: 0.3s;
 .ftadd p{
     width: 100%; height: 100%;
     line-height: 30px;
+}
+
+
+
+/* subpage  */
+.contents{height: 1100px;}
+.container{
+    width: 1000px; margin: 0 auto;
+    
+}
+.contents.subpage{
+    position: relative;
+    background-color:#EEEEEE;}
+
+.contents.citytour .visual{
+   background: url(../images/sub_bg02.jpg) ; 
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 500px;
+}
+.contents .txtWrap{
+    height: 100%;
+    color: #fff;
+    padding-top: 80px;
+    display:block; text-align: center; line-height: 40px;
+}
+.contents .txtWrap span::after{
+    content: ''; width: 200px; height: 5px;
+     background: #fff; display: inline-block; border-radius: 5px; 
+     margin: 0 10px;
+    }
+.contents .txtWrap h3{
+    font-size: 50px;
+}
+.container.section{
+    width: 950px; height: 800px;
+    position: absolute;
+    left: 25%; top:20%;
+}
+.container.section img{
+    width: 950px; height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
