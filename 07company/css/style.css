@@ -1,0 +1,36 @@
+@charset "utf-8";
+body{font-family: 'Nanum Gothic', sans-serif;}
+
+
+html,body{height: 100%;}
+.container{width: 1240px; margin: 0 auto;}
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    background-color: pink;
+}
+.navbar h1{ }
+.topMenu {height:80px; }
+.topNav{
+    height: 100%;
+    display: flex;
+}
+.topNav a{
+    display: flex; align-items: center;
+    padding: 20px;
+}
+
+/* toggle */
+.toggleMenu{
+    margin: 20px;
+    width: 50px;height: 50px;
+    background: white;
+    j;
+
+}
+.toggleMenu div{
+    width: 40px; height: 5px; background: red;
+    margin: 0 auto; border-radius: 5px;
+}
+.toggleMenu .bar1{ transform: translateY(-15px);}
+.toggleMenu .bar3{ transform: translateY(-15px);}
