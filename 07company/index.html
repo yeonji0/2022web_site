@@ -15,23 +15,69 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-<header class="headerWrap">
-    <div class="navbar container">
+<header id="header">
+    <div class="navbarWrap container">
         <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
-        <div class="topMenu">
-            <nav class="topNav">
-                <a href="#">회사소개</a>
-                <a href="#">아이스크림</a>
-                <a href="#">홍보채널</a>
-                <a href="#">매장위치찾기</a>
-                <a href="#">이벤트</a>
-            </nav>
-        </div>
-        <div class="toggleMenu">
+        <nav class="navbar">
+           <ul>
+                <li class="active"><a href="#">회사소개</a>
+                    <div class="submenuWrap">
+                        <ul class="submenu">
+                            <li><a href="#">조직체계</a></li>
+                            <li><a href="#">문의</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">비즈니스</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">아이스크림</a>
+                    <div class="submenuWrap">
+                        <ul class="submenu">
+                            <li><a href="#">파인트</a></li>
+                            <li><a href="#">미니컵</a></li>
+                            <li><a href="#">스쿱</a></li>
+                            <li><a href="#">아이스크림 케이크</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">홍보채널</a>
+                    <div class="submenuWrap">
+                        <ul class="submenu">
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">아이스크림을 만드는 방법</a></li>
+                            <li><a href="#">벤앤제리스 재단</a></li>
+                            <li><a href="#">벤앤제리스 사회활동</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">매장위치찾기</a>
+                    <div class="submenuWrap">
+                        <ul class="submenu">
+                            <li><a href="#">딜리버리앱</a></li>
+                            <li><a href="#">온라인배송</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">이벤트</a>
+                    <div class="submenuWrap">
+                        <ul class="submenu">
+                            <li><a href="#">스토어 이벤트</a></li>
+                            <li><a href="#">온라인 이벤트</a></li>
+                        </ul>
+                    </div>
+                </li>
+           </ul>
+        </nav>
+        <div class="toggle">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
+    </div>
+    <div class="navbarClone">
+      
+        
+        <div class="mMenu"></div>
     </div>
 
 
