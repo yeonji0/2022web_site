@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 /********** css responsive init**********/
-body{font-family: 'Nanum Gothic', sans-serif;background: #000;}
+body{font-family: 'Nanum Gothic', sans-serif;}
 html,body{height: 100%;}
 .container{width: 1240px; margin: 0 auto;}
 
 /* header */
 
-#header{width: 100%; position: fixed; background: #fff;}
+#header{width: 100%; position: fixed; background: #fff; z-index: 1;}
 .navbarWrap {
     display: flex;
 }
@@ -39,13 +39,16 @@ html,body{height: 100%;}
     display: block;
     height: 200px;
 }
-.submenuWrap{
+
+/* submenu */
+
+.navbar .submenuWrap{
     position: absolute;
     width: 100%;
 }
 .submenuWrap>ul>li{padding: 10px;}
 
-.submenu>li{
+.navbar .submenu>li{
     display: block;
     align-items: center; line-height: 20px;
     font-size: 15px; font-weight: bold;
@@ -56,6 +59,8 @@ html,body{height: 100%;}
     display: block; 
 }
 .navbarClone,.overlay{display: none;}
+
+
 
 .bg{width: 100%; height: 250px;background:#F6F6F6;}
 
@@ -76,6 +81,66 @@ html,body{height: 100%;}
 .toggle .bar3{ transform: translateY(8px);}
 
 
+/* visual */
+.visualWrap{
+    width: 100%; height: 900px;
+    background-image: url(../images/box_img01.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    
+}
+.txtWrap{
+   width: 1240px;
+   top: 30%; left: 15%;
+   position: relative;
+}
+.txtWrap h1{ font-size: 70px; margin-bottom: 20px;}
+.txtWrap p{ font-size: 40px; margin-bottom: 50px;}
+.txtWrap div{
+    width: 290px;height: 60px;
+    border: 1px solid #678788;
+    border-radius: 50px;
+    display: flex; justify-content: center; align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5px;
+    transition: .3s;
+}
+.txtWrap div:hover{background: rgba(0, 0, 0, .3)}
+.visualWrap img{ 
+    position: absolute;
+}
+.mlogo, .mVisual{display:none;}
+
+.ice01{
+    width: 400px; height: 300px;
+    left: calc(35%); top: calc(40%);
+    animation: ice01 1s forwards ;
+    animation-delay: .5s;
+  
+}
+.ice02{
+    width: 300px;height: 300px;
+    left: calc(60%); top: calc(15%);
+    animation: ice01 1s forwards ;
+    animation-delay: .8s;
+}
+.ice03{
+    width: 350px;height: 300px;
+    left: calc(60%); top: calc(60%);
+    animation: ice01 1s forwards ;
+    animation-delay: 1s;
+}
+@keyframes ice01 {
+    0%{transform: translateY(-300px); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+
+
+
 /********** css responsive **********/
 @media (max-width: 1399px) {
     
@@ -87,7 +152,7 @@ html,body{height: 100%;}
 
 @media (max-width: 991px) {
     .container{width: 100%;}
-    
+    .visualWrap img{display: none;}    
 }
 
 @media (max-width: 767px) {
@@ -96,6 +161,7 @@ html,body{height: 100%;}
     .navbar{display: none;}
     .toggle{
         display: flex; margin-left: auto;
+        cursor: pointer;
     }
     .navbarClone{
         display: block;
@@ -113,8 +179,56 @@ html,body{height: 100%;}
         background: #000;
         opacity: 0.5;
     }
-    
+    .logWrap{ 
+        display: flex; height: 50px; padding: 10px;
+        margin-bottom: 20px;
 
+    }
+    .logWrap>a{
+        margin-left: 10px;
+        width:80px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .logWrap .icon{
+        margin-top: 3px;
+        font-size: 15px;}
+    .logWrap .xicon{
+        font-size: 20px; margin-left: auto;
+        cursor: pointer;
+    }
+    .mMenu {
+        height: 100%; width: 100%;
+        padding: 10px;
+    }
+    .mMenu>li>a{
+        border-bottom: 1px solid #333;
+        height: 50px;
+        font-weight: bold;
+        display: flex; 
+        align-items: center;
+    }
+    .mMenu>li .submenuWrap{display: none;}
+    /* .mMenu>li:hover .submenuWrap{display: block;} */
+    .mMenu>li .submenuWrap{
+        padding: 10px 16px;
+    }
+    .txtWrap{
+        display:  none;
+    }
+
+  
+    .mvisualWrap div{
+        width: 100%; height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .mvisualWrap img{
+        display:block;
+        margin-top: 30%;
+    }
+
+    
 }
     
 
