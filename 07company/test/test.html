@@ -5,10 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(function(){
+            let slide = $(".slider").bxSlider({
+                mode:"fade",
+                controls:false
+            })
+
+            $(".prev").click(function(){
+                slide.goToPrevSlide()
+            })
+            $(".next").click(function(){
+                slide.goToNextSlide()
+            })
+
+        })
+    </script>
 </head>
 <body>
     <header id="header">
@@ -95,7 +113,47 @@
             <li>
                 <img src="images/icon01_06.png" alt="">
             </li>
-            <li>3</li>
+            <li>
+                <ul class="slider">
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>뉴스</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, aperiam.</p>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images/img01_02.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>뉴스</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, aperiam.</p>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images/img01_02.jpg" alt=""></div>
+                        </div>
+                    </li>
+                    <li class="sItems">
+                        <div class="itemWrap">
+                            <div class="sTxt">
+                                <div class="txt">
+                                    <h3>뉴스</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, aperiam.</p>
+                                </div>
+                            </div>
+                            <div class="sImg"><img src="images/img01_02.jpg" alt=""></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="sBtn">
+                    <div class="prev"><img src="images/btn01_01.jpg" alt=""></div>
+                    <div class="next"><img src="images/btn01_02.jpg" alt=""></div>
+                </div>
+            </li>
             <li>
                 <div>
                     <img src="images/icon01_01.png" alt="">

@@ -130,6 +130,8 @@
     background-position: center;
     background-size: cover;
 }
+
+
 .txt-card{
     position: absolute;
     left: 20px;top: 20px;
@@ -141,17 +143,62 @@
 }
 .txt-card h4{font-size: 2em;}
 
+/* slide  */
+.sItems{display: flex;}
+.sItems .sTxt{position: relative;}
+.sItems .sTxt,.sItems .sImg{_width: 310px;height: 310px;}
+.sItems .sTxt::after{
+    content: "";display: block;
+    width: 0; height: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #F6F6F6;
+    position: absolute;
+    top: 50%; right: -40px;
+}
+.sItems .txt{padding: 40px;}
+.sItems .txt h3{margin-bottom: 10px;}
+.sBtn{
+    position: absolute; bottom: 50px;
+    display: flex;
+    gap: 5px; left: 190px;
+}
 
 
 
 
 /********** css responsive  **********/
 @media (max-width: 1399px) {
+    .container{W: 100P;}
+.contents>ul>li:nth-child(1){order: 1;}
+.contents>ul>li:nth-child(4){order: 2;}
+.contents>ul>li:nth-child(5){order: 3;}
+.contents>ul>li:nth-child(9){order: 4;}
+
+.contents>ul>li:nth-child(1),
+.contents>ul>li:nth-child(4),
+.contents>ul>li:nth-child(5),
+.contents>ul>li:nth-child(9){
+    height: initial; padding: 20px;
+}
+
+.contents>ul>li:nth-child(1) img,
+.contents>ul>li:nth-child(4) img,
+.contents>ul>li:nth-child(5) img,
+.contents>ul>li:nth-child(9) img{
+    width: 100%;
+}
+
+
 
 }
 
 @media (max-width: 1199px) {
     .container{width: 100%;}
+    .contents>ul>li:nth-child(2),
+    .contents>ul>li:nth-child(10){display: none;}
+    .sItems .sTxt,.sItems .sImg{flex-grow: 1;}
+
 }
 
 @media (max-width: 991px) {
@@ -181,6 +228,8 @@
         background: #000;
         opacity: 0.5;
     }
+    
+.sItems .sTxt,.sItems .sImg{flex-grow: 1;}
 }
 
 @media (max-width: 575px) {
