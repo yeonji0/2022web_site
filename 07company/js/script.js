@@ -39,3 +39,22 @@ $(".mMenu>li>a").click(function(e){
 
 })
 
+$(".modal").click(function(e){
+    e.preventDefault();
+    let aModal = $(this).attr("href");
+    console.log(aModal)
+
+    $(".gLayer").css("display","flex");
+    $(".overLayer img").attr("src",aModal)
+})
+
+$(".xicon").click(function(){
+    $(this).parent().parent().hide();
+})
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });

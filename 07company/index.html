@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css" integrity="sha512-ipO1yoQyZS3BeIuv2A8C5AwQChWt2Pi4KU3nUvXxc4TKr8QgG8dPexPAj2JGsJD6yelwKa4c7Y2he9TTkPM4Dg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 <body>
 <header id="header">
@@ -117,31 +119,85 @@
         </li>
         <li>
             <ul class="layer">
-                <li>
+                <li class="mlayer">
                     <a href="images/modal_full.jpg" class="modal"><img src="images/modal.png" alt=""></a>
                 </li>
             </ul>
             <div class="gLayer">
                 <div class="overLayer">
                     <div class="xicon"><i class="fa-solid fa-xmark"></i></div>
-                    <img src="images/modal_full.jpg" alt="">
+                    <img src="images/modal.png" alt="">
+                </div>
+            </div>
+        </li>
+        <li class="sItems swiper mySwiper">
+            <div class="itemWrap swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="sTxt">
+                        <div class="txt">
+                            <h2>새로운소식</h2>
+                            <h3>벤 앤 제리스 최신 아이스크림 뉴스,<br>정보,사건 및 일반적인 행복한 이야기</h3>
+                            <h4>Flavor Friends Forever</h4>
+                            <p>친한 친구와 벤앤제리스를 나눠 먹으면 영원한 아이스크림 친구가 된답니다. <br> 친구와 우정, 그리고 달콤함에 대한 벤앤제리스의 이야기를 소개합니다. <br> 친구와 함께 달콤한 아이스크림을 나눠 먹고, 더 나은 사회를 위한 벤앤제리스의 유쾌한 발걸음에 함께해주세요!</p>
+                        </div>
+                    </div>
+                    <div class="sImg"><img src="images/bn_03.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                        <div class="sTxt">
+                            <div class="txt">
+                                <h2>새로운소식</h2>
+                                <h3>벤 앤 제리스 최신 아이스크림 뉴스,<br>정보,사건 및 일반적인 행복한 이야기</h3>
+                                <h4>소에서 코코아로!</h4>
+                                <p>우유와 크림에서부터 코코아, 바닐라 그리고 설탕까지 벤앤제리스 아이스크림 파인트 안에 들어가는 많은 재료들이 많다. 우리의 연계된 번영 비즈니스 모델은 파인트를 만드는 데 참여하는 모든 사람들이 공정한 몫을 받을 수 있도록 보장하는 목표를 가지고 있다.</p>
+                            </div>
+                        </div>
+                        <div class="sImg"><img src="images/bn_01.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="sTxt">
+                        <div class="txt">
+                            <h2>새로운소식</h2>
+                            <h3>벤 앤 제리스 최신 아이스크림 뉴스,<br>정보,사건 및 일반적인 행복한 이야기</h3>
+                            <h4>장내 배출량 감소</h4>
+                            <p>놀랄 일도 아니지만, 우리는 유제품을 좋아합니다. 하지만 우리는 지구에 큰 영향을 끼친다는 것을 알고 있습니다. 여기 가스가 많이 찬 소가 배출하는 온실가스를 줄이고 기후 변화에 대처하는 방법을 알려드릴게요.</p>
+                        </div>
+                    </div>
+                    <div class="sImg"><img src="images/bn_02.jpg" alt=""></div>
+                </div>
+    
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </li>
+        <li>
+            <div>
+                <div class="sec01_Wrap">
+                    <div class="txt">
+                        <h2>사려깊게 엄선한 재료</h2>
+                        <p>우리가 사용하는 재료와 성분은 <br> 정적인 변화를 지지하고 <br> 우리의 아이스크림이 <br> 환상적인 맛을 제공하는 것을  <br> 가능하게 합니다.</p>
+                    </div>
+                    <img src="images/box04.png" alt="">
                 </div>
             </div>
         </li>
         <li>
-            <div>3</div>
+            <div>
+                <h2>아이스크림</h2>
+                <img src="images/ice06.png" alt="">
+            </div>
         </li>
         <li>
-            <div>4</div>
+            <div>
+                <h2>영양 성분 및 알레르기</h2>
+                <img src="images/ice07.png" alt="">
+            </div>
         </li>
         <li>
-            <div>5</div>
-        </li>
-        <li>
-            <div>6</div>
-        </li>
-        <li>
-            <div>7</div>
+            <div>
+                <h2>ABOUT</h2>
+                <img src="images/ice.png" alt="">
+            </div>
         </li>
         <li>
             <div>8</div>
@@ -152,6 +208,9 @@
     </ul>
 </section>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js" integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
