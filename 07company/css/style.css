@@ -349,12 +349,53 @@ html,body{height: 100%;}
     display: flex;
     justify-content: center;align-items: center;
 }
-.sec02_Wrap>div img{width: 200px;height: 200px;}
+.sec02_Wrap>div img{width: 150px;height: 200px;}
 .sec02_Wrap h3{
     position: absolute;
     bottom: 10%; color: #8B4949;
     font-size: 25px;
 }
+
+/* snsboxWrap */
+.snsboxWrap{width: 1260px; height: 640px; margin-bottom: 20px;}
+.snsboxWrap>ul{
+    position: relative;  height: 640px;
+    display: flex; flex-wrap: wrap;
+}
+.snsboxWrap>ul>li{
+    position: relative; order: 7;
+    height: 640px;
+}
+.snsboxWrap>ul>li:nth-child(1){width: 315px; height: 640px; background: #BEA569;}
+
+.snsboxWrap>ul>li:nth-child(2),
+.snsboxWrap>ul>li:nth-child(3),
+.snsboxWrap>ul>li:nth-child(4),
+.snsboxWrap>ul>li:nth-child(5),
+.snsboxWrap>ul>li:nth-child(6),
+.snsboxWrap>ul>li:nth-child(7){width: 315px;height: 320px;background: pink;}
+
+.snsboxWrap>ul>li:nth-child(5),
+.snsboxWrap>ul>li:nth-child(6),
+.snsboxWrap>ul>li:nth-child(7){position: absolute; bottom: 0;}
+.snsboxWrap>ul>li:nth-child(5){right: 630px;}
+.snsboxWrap>ul>li:nth-child(6){right: 315px;}
+.snsboxWrap>ul>li:nth-child(7){right: 0;}
+
+.snsWrap{
+    display: flex; justify-content: center; align-items: center;
+    color: #fff;
+}
+.snsWrap img{width: 150px;height: 150px;}
+.snsWrap h3{font-size: 25px;padding: 10px; text-align: center; font-weight: bold;}
+.snsWrap p{ line-height: 25px; text-align: center; font-size:18px;}
+
+
+
+
+
+
+
 /********** css responsive **********/
 @media (max-width: 1399px) {
     
@@ -455,6 +496,7 @@ html,body{height: 100%;}
     }
 
      /* content */
+     .contents>ul{flex-direction: column;}
      .contents>ul>li:nth-child(1),
      .contents>ul>li:nth-child(2),
      .contents>ul>li:nth-child(3),
@@ -471,10 +513,15 @@ html,body{height: 100%;}
     }
 
      /* content_2st */
-
+     .content_2st{height: 1500px;}
+     .txTWrap{width: 100%;}
      .txTWrap h2{font-size: 30px;}
      .txTWrap P{display: none;}
      .sec02_Wrap{flex-direction: column;}
+     .sec02_Wrap>div{position: relative; margin: 0 auto;}
+     .sec02_Wrap>h3{
+        position: absolute;
+     }
 
 }
     
