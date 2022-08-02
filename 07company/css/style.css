@@ -390,6 +390,83 @@ html,body{height: 100%;}
 .snsWrap h3{font-size: 25px;padding: 10px; text-align: center; font-weight: bold;}
 .snsWrap p{ line-height: 25px; text-align: center; font-size:18px;}
 
+.blind{
+    width: 100; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    transition: .3s; opacity: 0;
+}
+.blind i{color: white;letter-spacing: 5px;}
+.instaWrap:hover .blind{opacity: 1;}
+
+ /* eventWrap */
+.event{
+    width: 1260px; height: 290px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.eventWrap{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+}
+.eventWrap p{
+    font-weight: bold;
+    font-size: 18px;
+    width: 290px;height: 60px;
+    border: 1px solid #4B5E5E;
+    display: flex;
+    justify-content: center; align-items: center;
+    border-radius: 30px;
+    color: #333;
+}
+.eventWrap .store{
+    width: 630px;
+    height: 100%;
+    background: #FE7B9A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.eventWrap h3{font-size: 30px; line-height: 50px; }
+.eventWrap .store h3{
+    color: white; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+.eventWrap .delievery{
+    display: flex; width:630px; height: 100%;
+    flex-direction: row;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+.delievery img{
+    width: 150px;height: 150px;
+    margin: 35px;
+}
+.delievery .deTxt{
+    text-align: center;  
+    color: #333;margin-top: 20px;
+}
+.delievery .deTxt h4{margin-bottom: 20px;}
+
+/* footer */
+.footer{ width: 100%; background-color:#F6F6F6;}
+.footerWrap{height: 100%;}
+.ftTop img{width: 100px;height: 40px;}
+.ftTop{display: flex; justify-content: center; align-items: center;}
+.ftTop p{
+    width: 1000px;
+    background:  pink;
+   
+}
+.ftTop a{padding: 20px; height: 100%;
+    margin-right: auto;;}
+
 
 
 
@@ -522,6 +599,7 @@ html,body{height: 100%;}
      .sec02_Wrap>h3{
         position: absolute;
      }
+     .snsboxWrap{display: none;}
 
 }
     
