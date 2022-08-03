@@ -10,50 +10,56 @@ html,body{height: 100%;}
 #header{width: 100%; position: fixed; z-index: 1000;}
 .navbarWrap {
     display: flex;
+    position: relative;
+    justify-content: space-between;
 }
 .navbarWrap img{
    height: 50px;
     padding: 10px;
 }
-.navbar{
-    margin-left: auto;
-  
+.navbar{}
+.navbar>ul{
+    width: 760px;
+    height: 100%;
+    display: flex;
 }
-.navbar>ul{display: flex; height: 100%;}
-.navbar>ul>li{position: relative;}
+.navbar>ul>li{
+    position: relative;
+    width: calc( 100% / 5 );
+}
 .navbar>ul>li>a{
     padding: 20px 30px;
     display: flex; justify-content: center;align-items: center;
     font-weight: bold;
 }
-
-
 .navbar>ul>li .submenu{
     display:none;
-    padding: 5px;
-    
+    padding: 5px; 
 }
 .navbar>ul>li:hover a{ }
 
 .navbar>ul>li:hover .submenu{
-    display: block;
     height: 200px;
 }
-
 /* submenu */
-
-.navbar .submenuWrap{
+.submenuWrap{
     position: absolute;
-    width: 100%;
+    width: 700px;
+    height: 180px;
+    left: 7px;
 }
+.submenuWrap>ul{}
 .submenuWrap>ul>li{padding: 10px;}
+
+.navbar .submenu{text-align: center;}
 
 .navbar .submenu>li{
     display: block;
     align-items: center; line-height: 20px;
     font-size: 15px; font-weight: bold;
-    width: 200px;
+    width: calc( 100% / 5 );
 }
+
 
 .navbar:hover .submenuWrap{
     display: block; 
@@ -62,7 +68,8 @@ html,body{height: 100%;}
 
 
 
-.bg{width: 100%; height: 250px;background:rgba(255, 255, 255, 0.2);}
+.bg{
+    width: 100%; height: 200px;background:rgba(255, 255, 255, 0.7);}
 
 
 /* toggle */
@@ -454,7 +461,7 @@ html,body{height: 100%;}
     color: #333;margin-top: 20px;
 }
 .delievery .deTxt h4{margin-bottom: 20px;}
-.delievery .deTxt p`:hover{background: rgba(0, 0, 0, .3);cursor: pointer;}
+.delievery .deTxt p:hover{background: rgba(0, 0, 0, .3);cursor: pointer;}
 
 /* footer */
 .footer{ width: 100%; background-color:#F6F6F6;}
@@ -472,12 +479,11 @@ html,body{height: 100%;}
 
 /* subpage */
 .subvisualWrap{
-    height: 740px; 
+    height: 750px; 
     display: flex;justify-content: center;align-items: center;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 }
 .subvisualWrap .txtWrap{width: 1240px;
    top: 0; left: 0;
@@ -485,9 +491,10 @@ html,body{height: 100%;}
 }
 .subvisualWrap .txtWrap p{font-size: 20px; line-height: 30px;}
 .subMenu .tab{display: flex;}
-.tab{
-    position: absolute;
-    top: -50%;}
+.subMenu{position: relative;
+   top: -5%;
+}
+
 .tab li {
     flex: 1 1 25%;
     height: 50px; display: flex;
@@ -495,8 +502,6 @@ html,body{height: 100%;}
     background: pink;
     cursor: pointer;
     font-weight: bold;
-    top: -90%;
-
 }
 
 

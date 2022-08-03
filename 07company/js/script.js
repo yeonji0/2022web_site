@@ -13,9 +13,9 @@ $(".overlay,.xicon").click(function(){
 
 $(".bg").slideUp();
 $(".navbar>ul>li").hover(function(){
-    $(".bg,.navbar .submenuWrap").stop().slideDown()
+    $(".bg, .submenuWrap, .submenu").stop().slideDown();
 },function(){
-    $(".bg,.navbar .submenuWrap").stop().slideUp()
+    $(".bg, .submenuWrap").stop().slideUp();
 
 })
 
