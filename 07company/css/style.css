@@ -7,8 +7,9 @@ html,body{height: 100%;}
 
 /* header */
 
-#header{width: 100%; position: fixed; z-index: 1000;}
-.navbarWrap {
+#header{width: 100%; z-index: 1000; position: fixed; transition: .5s;}
+#header.fixed{ position: fixed; background: white;}
+ .navbarWrap {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -42,7 +43,7 @@ html,body{height: 100%;}
     height: 200px;
 }
 /* submenu */
-.submenuWrap{
+.navbar .submenuWrap{
     position: absolute;
     width: 700px;
     height: 180px;
@@ -89,19 +90,19 @@ html,body{height: 100%;}
 
 
 /* visual */
+.txtWrap{
+    width: 1240px;
+    top: 30%; left: 15%;
+    position: relative;
+ }
 .visualWrap{
     width: 100%; height: 900px;
     background-image: url(../images/box_img01.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
     margin-bottom: 20px;
-}
-.txtWrap{
-   width: 1240px;
-   top: 30%; left: 15%;
-   position: relative;
+    position: relative;
 }
 .txtWrap h1{ font-size: 70px; margin-bottom: 20px;}
 .txtWrap p{ font-size: 40px; margin-bottom: 50px;}
@@ -116,27 +117,27 @@ html,body{height: 100%;}
     transition: .3s;
 }
 .txtWrap div:hover{background: rgba(0, 0, 0, .3)}
-.visualWrap img{ 
-    position: absolute;
-}
 .mlogo, .mVisual{display:none;}
 
 .ice01{
+    position: absolute;
     width: 400px; height: 300px;
-    left: calc(35%); top: calc(40%);
+    left: calc(30%); top: calc(40%);
     animation: ice01 1s forwards ;
     animation-delay: .5s;
   
 }
 .ice02{
+    position: absolute;
     width: 300px;height: 300px;
-    left: calc(60%); top: calc(15%);
+    left: calc(70%); top: calc(-65%);
     animation: ice01 1s forwards ;
     animation-delay: .8s;
 }
 .ice03{
+    position: absolute;
     width: 350px;height: 300px;
-    left: calc(60%); top: calc(60%);
+    left: calc(70%); top: calc(90%);
     animation: ice01 1s forwards ;
     animation-delay: 1s;
 }
@@ -232,9 +233,9 @@ html,body{height: 100%;}
     padding: 30px; 
 }
 .sImg img{width:100%;height: 100%;}
-.sTxt h2{margin-bottom: 5px; color: #A96D28;}
-.sTxt h3{font-size: 15px; margin-bottom: 10px;}
-.sTxt h4{font-size: 14px; margin-bottom: 10px;}
+.sTxt h2{margin-bottom: 10px; color: #A96D28; font-size: 35px;}
+.sTxt h3{color: #664723; font-size: 16px; margin-bottom: 10px;}
+.sTxt h4{font-size: 20px; margin-bottom: 15px; color: #222;}
 .sTxt p{font-size: 14px; color: #333;}
 
 .btnWrap{
@@ -277,6 +278,7 @@ html,body{height: 100%;}
     background: #FFA3ED;
     overflow: hidden;
     padding: 50px;
+   
 }
 .contents>ul>li:nth-child(6){
     background: #B360A2;
@@ -296,11 +298,15 @@ html,body{height: 100%;}
   justify-content: center;
   margin-bottom: 50px;
 }
+.contents>ul>li:nth-child(5) img,
+.contents>ul>li:nth-child(6) img,
+.contents>ul>li:nth-child(7) img{transition: .5s;}
 .contents>ul>li:nth-child(5) img:hover,
 .contents>ul>li:nth-child(6) img:hover,
 .contents>ul>li:nth-child(7) img:hover{
     transform: translateY(-45px);
-    transition: .3s;
+   
+    
 }
 
 .contents>ul>li:nth-child(8){
@@ -355,6 +361,7 @@ html,body{height: 100%;}
     border-radius: 50px;
     display: flex;
     justify-content: center;align-items: center;
+    cursor: pointer;
 }
 .sec02_Wrap>div img{width: 150px;height: 200px;}
 .sec02_Wrap h3{
@@ -415,6 +422,7 @@ html,body{height: 100%;}
 .eventWrap{
     height: 300px;
     display: flex;
+    gap: 5px;
     align-items: center;
     flex-basis: 50%;
 }
@@ -422,7 +430,6 @@ html,body{height: 100%;}
     font-weight: bold;
     font-size: 18px;
     width: 290px;height: 60px;
-    border: 1px solid #4B5E5E;
     display: flex;
     justify-content: center; align-items: center;
     border-radius: 30px;
@@ -438,20 +445,22 @@ html,body{height: 100%;}
     flex-direction: column;
     border-radius: 10px;
 }
+.eventWrap .store>p{background:white;}
 .eventWrap h3{font-size: 30px; line-height: 50px; }
 .eventWrap .store h3{
     color: white; 
     text-align: center;
     margin-bottom: 20px;
 }
-.eventWrap .store p:hover{background: rgba(0, 0, 0, .3);cursor: pointer;}
+.eventWrap .store p:hover{cursor: pointer;}
 .eventWrap .delievery{
     display: flex; width:630px; height: 100%;
     flex-direction: row;
-    border: 1px solid #000;
+    border: 1px solid #999;
     padding: 20px;
     border-radius: 10px;
 }
+.eventWrap .delievery p{background-color:#FE7B9A;color: white;}
 .delievery img{
     width: 150px;height: 150px;
     margin: 35px;
@@ -461,7 +470,7 @@ html,body{height: 100%;}
     color: #333;margin-top: 20px;
 }
 .delievery .deTxt h4{margin-bottom: 20px;}
-.delievery .deTxt p:hover{background: rgba(0, 0, 0, .3);cursor: pointer;}
+.delievery .deTxt p:hover{cursor: pointer;}
 
 /* footer */
 .footer{ width: 100%; background-color:#F6F6F6;}
@@ -492,17 +501,23 @@ html,body{height: 100%;}
 .subvisualWrap .txtWrap p{font-size: 20px; line-height: 30px;}
 .subMenu .tab{display: flex;}
 .subMenu{position: relative;
-   top: -5%;
+   top: -5%; 
 }
 
 .tab li {
     flex: 1 1 25%;
     height: 50px; display: flex;
     justify-content: center; align-items: center;
-    background: pink;
+    background: white;
     cursor: pointer;
     font-weight: bold;
 }
+.tab li.active{background: #ECEDEA;}
+.content{width: 1240px;position: relative;}
+.content p{position: absolute; right: 0; padding: 10px;font-weight: bold;}
+.content img{width: 100%;}
+.content div{display: none;}
+.content div:nth-child(1){display: block;}
 
 
 

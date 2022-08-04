@@ -1,3 +1,12 @@
+$(window).scroll(function(){
+    let scrollY = window.pageYOffset;
+
+    if( scrollY>10){
+        $("#header").addClass("fixed");
+    }else{
+        $("#header").removeClass("fixed");
+    }
+})
 
 
 
@@ -13,15 +22,15 @@ $(".overlay,.xicon").click(function(){
 
 $(".bg").slideUp();
 $(".navbar>ul>li").hover(function(){
-    $(".bg, .submenuWrap, .submenu").stop().slideDown();
+    $(".bg, .navbar .submenuWrap,.navbar .submenu").stop().slideDown();
 },function(){
-    $(".bg, .submenuWrap").stop().slideUp();
+    $(".bg, .navbar .submenuWrap").stop().slideUp();
 
 })
 
 
 console.log("index");
-$(".navbar>ul>").clone().appendTo(".mMenu")
+$(".navbar>ul>li").clone().appendTo(".mMenu")
 
 
 $(".mMenu>li>a").click(function(e){
@@ -30,9 +39,9 @@ $(".mMenu>li>a").click(function(e){
 
     $(".mMenu>li>a").parent().find(".submenuWrap").slideUp()
     if( $(this).hasClass("active") ){
-
+        $(".mMenu>li>a").removeClass("active");
     }else{
-        $(this).parent().find(".submenuWrap").show();
+        $(this).parent().find(".submenuWrap").slideDown();
         $(".mMenu>li>a").removeClass("active");
         $(this).addClass("active");
     }
@@ -73,3 +82,5 @@ var swiper = new Swiper(".mySwiper", {
     }
     $(".slide>div").eq(num).css({"z-index":view++,opacity:0}).stop().animate({opacity:1},500)
   }
+
+  

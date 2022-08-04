@@ -19,13 +19,13 @@
 <body>
 <header id="header">
     <div class="navbarWrap container">
-        <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
+        <h1><a href="./index.html"><img src="images/logo.png" alt=""></a></h1>
         <nav class="navbar">
            <ul>
                 <li class="active"><a href="#">회사소개</a>
                     <div class="submenuWrap">
                         <ul class="submenu">
-                            <li><a href="#">조직체계</a></li>
+                            <li><a href="./sub01.html">조직체계</a></li>
                             <li><a href="#">문의</a></li>
                             <li><a href="#">채용정보</a></li>
                             <li><a href="#">비즈니스</a></li>
@@ -46,9 +46,9 @@
                     <div class="submenuWrap">
                         <ul class="submenu">
                             <li><a href="#">보도자료</a></li>
-                            <li><a href="#">아이스크림을 만드는 방법</a></li>
-                            <li><a href="#">벤앤제리스 재단</a></li>
-                            <li><a href="#">벤앤제리스 사회활동</a></li>
+                            <li><a href="#">제조방법</a></li>
+                            <li><a href="#">재단소개</a></li>
+                            <li><a href="#"></a>사회활동</a></li>
                         </ul>
                     </div>
                 </li>
@@ -99,12 +99,28 @@
 </div>
 <div class="subMenu container">
     <ul class="tab">
-        <li>조직체계</li>
+        <li class="active">조직체계</li>
         <li>문의</li>
         <li>채용정보</li>
         <li>비즈니스</li>
     </ul>
     <div class="content">
+        <div>
+            <p>HOME > 회사소개 > 조직체계</p>
+            <img src="images/sub_con01.png" alt="">
+        </div>
+        <div>
+            <p>HOME > 회사소개 > 문의</p>
+            <img src="images/sub_con01.png" alt="">
+        </div>
+        <div>
+            <p>HOME > 회사소개 > 채용정보</p>
+            <img src="images/sub_con01.png" alt="">
+        </div>
+        <div>
+            <p>HOME > 회사소개 > 비즈니스</p>
+            <img src="images/sub_con01.png" alt="">
+        </div>
 
     </div>
 
@@ -139,5 +155,32 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js" integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/script.js"></script>
+<script>
+    nowMenu(0);
+
+    let params = new URLSearchParams(location.search);
+
+    function tab(){
+        $(".tab li").click(function(){
+            let i = $(this).index();
+            $(".tab li").removeClass("active");
+            $(this).addClass("active")
+
+            $(".content div").hide().eq(i).show()
+        })
+    }
+    function view(i){
+        if(i == null){
+            $(".tab li").removeClass("active").eq(i).addClass("active");
+            $(".content div").hide().eq(i).show();
+
+            tab()
+        }else{
+            tab()
+        }
+    }
+    view(params.get("submenuWrap"))
+</script>
+
 </body>
 </html>
