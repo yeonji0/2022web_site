@@ -17,22 +17,22 @@
     
 </head>
 <body>
-<header id="header">
+<header id="header" class="sub">
     <div class="navbarWrap container">
         <h1><a href="./index.html"><img src="images/logo.png" alt=""></a></h1>
         <nav class="navbar">
            <ul>
-                <li class="active"><a href="#">회사소개</a>
+                <li class="active"><a href="./sub01.html">회사소개</a>
                     <div class="submenuWrap">
                         <ul class="submenu">
-                            <li><a href="./sub01.html">조직체계</a></li>
-                            <li><a href="#">문의</a></li>
-                            <li><a href="#">채용정보</a></li>
-                            <li><a href="#">비즈니스</a></li>
+                            <li><a href="sub01.html?submenu=0">조직체계</a></li>
+                            <li><a href="sub01.html?submenu=1">문의</a></li>
+                            <li><a href="sub01.html?submenu=2">채용정보</a></li>
+                            <li><a href="sub01.html?submenu=3">비즈니스</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">아이스크림</a>
+                <li><a href="./sub02.html">아이스크림</a>
                     <div class="submenuWrap">
                         <ul class="submenu">
                             <li><a href="#">파인트</a></li>
@@ -42,7 +42,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">홍보채널</a>
+                <li><a href="./sub03.html">홍보채널</a>
                     <div class="submenuWrap">
                         <ul class="submenu">
                             <li><a href="#">보도자료</a></li>
@@ -52,7 +52,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">매장위치찾기</a>
+                <li><a href="./sub04.html">매장위치찾기</a>
                     <div class="submenuWrap">
                         <ul class="submenu">
                             <li><a href="#">딜리버리앱</a></li>
@@ -60,7 +60,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">이벤트</a>
+                <li><a href="./sub05.html">이벤트</a>
                     <div class="submenuWrap">
                         <ul class="submenu">
                             <li><a href="#">스토어 이벤트</a></li>
@@ -92,7 +92,7 @@
 </header>
 
 <div class="subvisualWrap company" style="background-image:url(images/sub01.png);">
-    <div class="txtWrap">
+    <div class="subtxtWrap">
         <h1>회사소개</h1>
         <p>벤 앤 제리스 최신 아이스크림 <br> 뉴스, 정보, 사건 및 일반적인 행복한 이야기.</p>
     </div>
@@ -111,15 +111,15 @@
         </div>
         <div>
             <p>HOME > 회사소개 > 문의</p>
-            <img src="images/sub_con01.png" alt="">
+            <img src="images/sub_con02.png" alt="">
         </div>
         <div>
             <p>HOME > 회사소개 > 채용정보</p>
-            <img src="images/sub_con01.png" alt="">
+            <img src="images/sub_con03.jpeg" alt="">
         </div>
         <div>
             <p>HOME > 회사소개 > 비즈니스</p>
-            <img src="images/sub_con01.png" alt="">
+            <img src="images/sub_con04.jpg" alt="">
         </div>
 
     </div>
@@ -155,32 +155,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js" integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/script.js"></script>
-<script>
-    nowMenu(0);
-
-    let params = new URLSearchParams(location.search);
-
-    function tab(){
-        $(".tab li").click(function(){
-            let i = $(this).index();
-            $(".tab li").removeClass("active");
-            $(this).addClass("active")
-
-            $(".content div").hide().eq(i).show()
-        })
-    }
-    function view(i){
-        if(i == null){
-            $(".tab li").removeClass("active").eq(i).addClass("active");
-            $(".content div").hide().eq(i).show();
-
-            tab()
-        }else{
-            tab()
-        }
-    }
-    view(params.get("submenuWrap"))
-</script>
 
 </body>
 </html>

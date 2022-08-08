@@ -7,6 +7,7 @@ html,body{height: 100%;}
 
 /* header */
 
+#header.sub{background:#fff;}
 #header{width: 100%; z-index: 1000; position: fixed; transition: .5s;}
 #header.fixed{ position: fixed; background: white;}
  .navbarWrap {
@@ -494,11 +495,12 @@ html,body{height: 100%;}
     background-size: cover;
     background-repeat: no-repeat;
 }
-.subvisualWrap .txtWrap{width: 1240px;
+.subvisualWrap .subtxtWrap{width: 1240px;
    top: 0; left: 0;
    color: white;
 }
-.subvisualWrap .txtWrap p{font-size: 20px; line-height: 30px;}
+.subtxtWrap h1{font-size: 70px; margin-bottom: 20px;}
+.subtxtWrap p{ font-size: 30px; margin-bottom: 50px;}
 .subMenu .tab{display: flex;}
 .subMenu{position: relative;
    top: -5%; 
@@ -513,13 +515,11 @@ html,body{height: 100%;}
     font-weight: bold;
 }
 .tab li.active{background: #ECEDEA;}
-.content{width: 1240px;position: relative;}
+.content{width: 1240px;position: relative;display: flex;}
 .content p{position: absolute; right: 0; padding: 10px;font-weight: bold;}
 .content img{width: 100%;}
 .content div{display: none;}
 .content div:nth-child(1){display: block;}
-
-
 
 
 /********** css responsive **********/
@@ -666,6 +666,8 @@ html,body{height: 100%;}
      .ftTop{flex-direction: column;}
      .ftTop a{display: block;width: 100%; display: flex;justify-content: center; align-items: center; margin-bottom: 20px;}
      .ftbottom,.ftadd{display: none;}
+
+
 
 
 }
