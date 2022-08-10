@@ -515,7 +515,7 @@ html,body{height: 100%;}
     font-weight: bold;
 }
 .tab li.active{background: #ECEDEA;}
-.content{width: 1240px;position: relative;display: flex;}
+.content{width: 1240px;position: relative;display: flex;width: 100%;}
 .content p{position: absolute; right: 0; padding: 10px;font-weight: bold;}
 .content img{width: 100%;}
 .content div{display: none;}
@@ -667,7 +667,8 @@ html,body{height: 100%;}
      .ftTop a{display: block;width: 100%; display: flex;justify-content: center; align-items: center; margin-bottom: 20px;}
      .ftbottom,.ftadd{display: none;}
 
-
+     .subtxtWrap h1{margin-left: 20%;}
+     .subtxtWrap p{display: none;}
 
 
 }
