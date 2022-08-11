@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .viewData{width: 500px; margin: 0 auto;}
+        .viewData li{ 
+            position: relative; height: 50px;
+            line-height: 45px;
+            cursor: pointer;
+        }
+        .viewData li .txt{padding: 0 15px;}
+        .viewData li .txt.active{background: skyblue;}
+        .viewData .iconWrap{
+            display: flex; position: absolute;
+            gap: 5px; right: 5px; top: 8px;
+        }
+        .viewData .iconWrap a{
+            width: 30px;height: 30px;
+            background: pink; 
+            display: flex; justify-content: center; align-items: center;
+        }
+        .inpWrap{width: 500px; margin: 20px auto; display: flex; gap: 5px;}
+        .inpWrap .inp{flex-grow: 1; text-indent: 10px;}
+        .inpWrap .btn1{width: 80px;height: 40px;}
+        .inpWrap .btn2{width: 80px;height: 40px;}
+    </style>
+</head>
+<body>
+    <div class="inpWrap">
+        <input type="text" class="inp">
+        <button class="btn1">할일</button>
+        <button class="btn2">수정</button>
+    </div>
+   
+    <ul class="viewData">
+        
+    </ul>
+
+    <script>
+        let listData = [];
+
+        const viewData = document.querySelector(".viewData");
+        const inp = document.querySelector(".inp");
+        const btn1 = document.querySelector(".btn1");
+        const btn2 = document.querySelector(".btn2");
+        const num = document.querySelector(".num");
+
+        btn1.addEventListener("click",function(){
+            if(inp.value != ""){
+
+                let value = {"todo":inp.value,"done":false};
+                listData.push(value);
+
+                let valueData = JSON.stringify(listData)
+                localStorage.setItem("todoData",valueData)
+
+                view();
+                inp.value = "";
+
+            }else{
+                alert("입력하세요")
+                inp.focus();
+            }
+        })
+
+        view();
+
+        function view(){
+
+            if(localStorage.length > 0){
+                let localData = localStorage.getItem("todoData");
+                listData = JSON.parse(localData)
+            }
+
+            todoData = '';
+            listData.forEach(function(item,i){
+                console.log(item);
+
+                todoData += `<li>`
+                if(item.done == true){
+                    todoData +=  `<div class="txt active" onclick="done(${i})">${listData[i]["todo"]}</div>`
+                }else{
+                    todoData +=  `<div class="txt" onclick="done(${i})">${listData[i]["todo"]}</div>`
+                }
+               
+                todoData +=  `<div class="iconWrap">`
+                todoData +=   `<a href="#" onclick="del(${i})">del</a>`
+
+                if(item.done == true){
+                    todoData +=  `  <a href="#" onclick="cancle(${i})">c</a>`
+                }else{
+                    todoData += `  <a href="#" onclick="done(${i})">do</a>`
+                }
+                todoData += `  </div>
+                                </li>`
+            })
+            viewData.innerHTML = todoData;
+        }
+
+        function del(idx){
+            listData.splice(idx,1);
+
+            let valueData = JSON.stringify(listData)
+            localStorage.setItem("todoData",valueData);
+
+            view();
+        }
+        function done(idx){
+            listData[idx].done = !listData[idx].done
+
+            let valueData = JSON.stringify(listData)
+            localStorage.setItem("todoData",valueData);
+
+            view();
+        }
+
+        function cancle(idx){
+            console.log(idx);
+            listData[idx].done = false;
+            view();
+        }
+
+
+        
+
+
+    </script>
+</body>
+</html>
