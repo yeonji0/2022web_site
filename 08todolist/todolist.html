@@ -9,7 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
-        .viewData{width: 500px; margin: 0 auto;}
+        body,html{height: 100%;}
+        .container{ margin: 20px auto;}
+        .todoWrap h2{
+            font-size: 30px;
+            display: flex;justify-content: center;align-items: center;
+        }
+        
+        .todoWrap{
+            width: 800px; margin: 0 auto;
+            background: rgba(168, 237, 234, 1);
+            padding: 10px;
+        }
+        .viewData{width: 500px; margin: 0 auto;bg}
         .viewData li{ 
             position: relative; height: 50px;
             line-height: 45px;
@@ -33,15 +45,19 @@
     </style>
 </head>
 <body>
-    <div class="inpWrap">
-        <input type="text" class="inp">
-        <button class="btn1">할일</button>
-        <button class="btn2">수정</button>
+    <div class="container">
+        <div class="todoWrap">
+            <h2>todolist</h2>
+            <div class="inpWrap">
+                <input type="text" class="inp">
+                <button class="btn1">할일</button>
+                <button class="btn2">수정</button>
+            </div>
+            <ul class="viewData">
+            
+            </ul>
+        </div>
     </div>
-   
-    <ul class="viewData">
-        
-    </ul>
 
     <script>
         let listData = [];
@@ -96,6 +112,7 @@
                 if(item.done == true){
                     todoData +=  `  <a href="#" onclick="cancle(${i})">c</a>`
                 }else{
+                    
                     todoData += `  <a href="#" onclick="done(${i})">do</a>`
                 }
                 todoData += `  </div>
