@@ -21,27 +21,38 @@
             background: rgba(168, 237, 234, 1);
             padding: 10px;
         }
-        .viewData{width: 500px; margin: 0 auto;bg}
+        .viewData{width: 500px; margin: 0 auto;}
         .viewData li{ 
             position: relative; height: 50px;
             line-height: 45px;
             cursor: pointer;
         }
         .viewData li .txt{padding: 0 15px;}
-        .viewData li .txt.active{background: skyblue;}
+        .viewData li .txt.active{
+            background: skyblue;
+            border-radius: 10px;
+        }
         .viewData .iconWrap{
             display: flex; position: absolute;
             gap: 5px; right: 5px; top: 8px;
         }
         .viewData .iconWrap a{
             width: 30px;height: 30px;
-            background: pink; 
+            background: #183153; 
             display: flex; justify-content: center; align-items: center;
+            color: white;
+            border-radius: 5px;
         }
         .inpWrap{width: 500px; margin: 20px auto; display: flex; gap: 5px;}
         .inpWrap .inp{flex-grow: 1; text-indent: 10px;}
-        .inpWrap .btn1{width: 80px;height: 40px;}
-        .inpWrap .btn2{width: 80px;height: 40px;}
+        .inpWrap .btn1{
+            width: 80px;height: 40px;
+            border: 0 none;
+            border-radius: 5px;
+            background: #fab005;
+            color: white; font-size: 15px; font-weight: bold;
+            text
+        }
     </style>
 </head>
 <body>
@@ -51,7 +62,6 @@
             <div class="inpWrap">
                 <input type="text" class="inp">
                 <button class="btn1">할일</button>
-                <button class="btn2">수정</button>
             </div>
             <ul class="viewData">
             
@@ -107,13 +117,13 @@
                 }
                
                 todoData +=  `<div class="iconWrap">`
-                todoData +=   `<a href="#" onclick="del(${i})">del</a>`
+                todoData +=   `<a href="#" onclick="del(${i})"><i class="fa-solid fa-bomb"></i></a>`
 
                 if(item.done == true){
-                    todoData +=  `  <a href="#" onclick="cancle(${i})">c</a>`
+                    todoData +=  `  <a href="#" onclick="cancle(${i})"><i class="fa-solid fa-pen-to-square"></i></a>`
                 }else{
                     
-                    todoData += `  <a href="#" onclick="done(${i})">do</a>`
+                    todoData += `  <a href="#" onclick="done(${i})"><i class="fa-solid fa-circle-check"></i></a>`
                 }
                 todoData += `  </div>
                                 </li>`
