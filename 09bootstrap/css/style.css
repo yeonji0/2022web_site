@@ -1,2 +1,27 @@
 html,body{height: 100%;}
 body{background: #000;}
+
+.visual{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.scene{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.scene.one{width: 480px;height: 535px;}
+.scene.two{width: 480px;height: 639px;}
+.swiper-slide{
+    display: flex; justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.swiper-slide .btn{ 
+    border: 1px solid #fff; background: none;
+}
+.container.pro>div> img{width: 400px;}
+
