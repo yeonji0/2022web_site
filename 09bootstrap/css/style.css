@@ -1,5 +1,7 @@
 html,body{height: 100%;}
 body{background: #000;}
+li{list-style: none;}
+a:link,a:visited{text-decoration: none; color: #fff;}
 
 .visual{
     height: 100%;
@@ -24,4 +26,5 @@ body{background: #000;}
     border: 1px solid #fff; background: none;
 }
 .container.pro>div> img{width: 400px;}
+.container.scene03>div> img{width: 540px;}
 
