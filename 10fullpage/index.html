@@ -6,20 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/10fullpage/css/fullpage.css">
+    <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/jquery.fullPage.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
 </head>
 <body>
+   <div class="navTop">
+        <div class="navWrap container">
+            <a href="#"><img src="images/icon.png" alt=""></a>
+            <nav class="menuWrap">
+                <ul>
+                    <li><a href="#">야요와친구들</a></li>
+                    <li><a href="#">미디어</a></li>
+                    <li><a href="#">뉴스</a></li>
+                    <li><a href="#">플레이 가이드</a></li>
+                </ul>
+            </nav>
+        </div>
+   </div>
 <div id="fullpage">
     <!-- section #1 -->
     <div class="section page1 bg-info" data-anchor="m1st">
         <div class="wrap">
-            <div class="container text-center">
-                Lorem ipsum dolor sit amet.
-            </div>
+          <video id="bgVideo" data-autoplay muted loop>
+            <source src="images/file.mp4" type="">
+          </video>
         </div>
     </div>
     <!-- section #2 -->
