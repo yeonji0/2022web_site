@@ -1,3 +1,11 @@
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +18,6 @@ ul, li {
 a:link, a:visited {
   text-decoration: none;
   color: #333;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .navTop {
@@ -49,21 +52,160 @@ a:link, a:visited {
   color: #D42470;
 }
 
-.wrap {
+.page1 .wrap {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-
-.page1 #bgVideo {
-  position: absolute;
+.page1 .wrap #bgVideo {
+  position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 0 !important;
+}
+.page1 .wrap .txtWrap {
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.page1 .wrap .txtWrap h3 {
+  font-size: 24px;
+}
+.page1 .wrap .txtWrap h1 {
+  font-size: 80px;
+}
+
+.page2 .wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.page2 .wrap .txtWrap {
+  position: absolute;
+  top: 100px;
+}
+.page2 .wrap .txtWrap h4 {
+  font-size: 15px;
+  margin-top: 15px;
+}
+.page2 .wrap .imgWrap {
+  position: relative;
+  width: 1000px;
+  height: 680px;
+  top: 100px;
+  background-image: url(../images/friends.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page2 .wrap .imgWrap .v1st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(-301px, -173px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v1st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v2st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(-100px, -173px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v2st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v3st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(96px, -173px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v3st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v4st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(305px, -173px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v4st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v5st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(-199px, -3px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v5st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v6st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(0px, -3px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v6st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v7st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(202px, -3px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v7st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v8st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(-301px, 175px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v8st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v9st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(-97px, 175px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v9st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v10st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(100px, 175px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v10st:hover {
+  opacity: 1;
+}
+.page2 .wrap .imgWrap .v11st {
+  position: absolute;
+  opacity: 0;
+  transform: translate(302px, 175px);
+  transition: 0.3s;
+}
+.page2 .wrap .imgWrap .v11st:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

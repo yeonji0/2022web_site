@@ -1,10 +1,11 @@
 $shadow1:0 0 10px rgba(0,0,0,0.5);
 
+body{font-family: 'Questrial', sans-serif;}
+html,body{height: 100%;}
 *{margin: 0;padding: 0;}
 ul,li{list-style: none;}
 a:link,a:visited{text-decoration: none; color: #333;}
 
-.container{width: 1200px;}
 
 
 .navTop{
@@ -30,23 +31,150 @@ a:link,a:visited{text-decoration: none; color: #333;}
 
 }
 
-.wrap{
-    width: 100%;height: 100vh;
-    display: flex;justify-content: center;align-items: center;
-    
-    div{position: absolute;}
-    
-}
+
 
 .page1{
-    #bgVideo{
-        position: absolute;
-        width: 100%;height: 100%;
-        object-fit: cover;
-    }
-    .txtWrap{
+    .wrap{
+        width: 100%;height: 100vh;
+        display: flex;justify-content: center;align-items: center;
+        position: relative;
+        #bgVideo{
+            position: relative;
+            width: 100%;height: 100%;
+            object-fit: cover;
+            z-index: 0 !important;
+        }
+        .txtWrap{
+            position: absolute;
+            top: 35%;
+            z-index: 1;
+            color:#fff;
+            text-shadow: $shadow1;
+            h3{font-size: 24px;}
+            h1{font-size: 80px;}
+        }
         
     }
-    
+}
 
+.page2{
+    .wrap{
+        width: 100%;height: 100vh;
+        display: flex;justify-content: center;align-items: center;
+        position: relative;
+        .txtWrap{
+            position: absolute;
+            top: 100px;
+            h4{font-size: 15px; margin-top: 15px;}
+        }
+
+        .imgWrap{
+            position: relative;
+            width: 1000px;height: 680px;
+            top: 100px;
+            background-image: url(../images/friends.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;justify-content: center;align-items: center;
+            .v1st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(-301px, -173px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v2st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(-100px,-173px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v3st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(96px,-173px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v4st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(305px,-173px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v5st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(-199px,-3px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v6st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(0px,-3px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v7st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(202px,-3px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v8st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(-301px,175px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v9st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(-97px,175px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v10st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(100px,175px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .v11st{
+                position: absolute;
+                opacity: 0;
+                transform:translate(302px,175px);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
