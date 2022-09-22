@@ -15,8 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/jquery.fullPage.js"></script>
+
 </head>
 
 <body>
@@ -45,7 +56,7 @@
                 <div class="txtWrap container">
                     <h3>Our First Metaverse,</h3>
                     <h1>PUPPYRED</h1>
-                </div>     
+                </div>
             </div>
         </div>
         <!-- section #2 -->
@@ -55,7 +66,7 @@
                     <img src="images/page2_icon.png" alt="">
                     <h4>야요와 친구들을 클릭해보세요!</h4>
                 </div>
-                <div class="imgWrap">    
+                <div class="imgWrap">
                     <div class="v1st">
                         <a href="#"><img src="images/img01.png" alt=""></a>
                     </div>
@@ -93,7 +104,62 @@
             </div>
         </div>
         <!-- section #3 -->
+        <div class="section page3" data-anchor="m3st">
+            <div class="wrap container-fluid">
+                <div class="slider slider-for">
+                    <div class="item" style="background-image: url(images/simg01.png);"></div>
+                    <div class="item" style="background-image: url(images/simg02.png);"></div>
+                    <div class="item" style="background-image: url(images/simg03.png);"></div>
+                    <div class="item" style="background-image: url(images/simg04.png);"></div>
+                    <div class="item" style="background-image: url(images/simg05.png);"></div>
+                    <div class="item" style="background-image: url(images/simg06.png);"></div> 
+                </div>
+                <div class="slider slider-nav">
+                    <div class="py-2">
+                        <img src="images/ssimg01.png" alt="">
+                    </div>
+                    <div class="py-2">
+                        <img src="images/ssimg02.png" alt="">
+                    </div>
+                    <div class="py-2">
+                        <img src="images/ssimg03.png" alt="">
+                    </div>
+                    <div class="py-2">
+                        <img src="images/ssimg04.png" alt="">
+                    </div>
+                    <div class="py-2">
+                    <img src="images/ssimg05.png" alt="">
+                    </div>
+                    <div class="py-2">
+                    <img src="images/ssimg06.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true,
+            });
+        </script>
+
         <!-- section #4 -->
+        <div class="section page4">
+
+        </div>
+
     </div>
 
 

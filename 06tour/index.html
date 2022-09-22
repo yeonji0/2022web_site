@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>여행박사</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.css" integrity="sha512-wMTbLMebj4OAT4mU2nV6XvE8QuTHOrwPKNaGuGF2wiaNU9IHea/bgJcKP/DtG+c3+LbNu54evMgWOWPvN/7iDQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.css"
+        integrity="sha512-wMTbLMebj4OAT4mU2nV6XvE8QuTHOrwPKNaGuGF2wiaNU9IHea/bgJcKP/DtG+c3+LbNu54evMgWOWPvN/7iDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-   
+
     <script>
-         $(document).ready(function(){
+        $(document).ready(function () {
             var slide = $(".slide").bxSlider({
-                controls:false,
-                pagerCustom:".slideTap",
-                mode:"vertical",
-                touchEnabled:false,
+                controls: false,
+                pagerCustom: ".slideTap",
+                mode: "vertical",
+                touchEnabled: false,
                 infiniteLoop: false
             });
 
-            $("btnNext").click(function(){
+            $("btnNext").click(function () {
                 slide.goToNextSlide()
             });
-            $("btnPrev").click(function(){
+            $("btnPrev").click(function () {
                 slide.goToPrevSlide()
             });
         });
-        $(document).ready(function(){
+        $(document).ready(function () {
             $("#sdate01, #edate01,#sdate02, #edate02,#sdate03, #edate03,#sdate04, #edate04").datepicker({
-                dateFormat:'yy.mm.dd',
+                dateFormat: 'yy.mm.dd',
                 dateFormat: 'yy.mm.dd',
                 prevText: '이전 달',
                 nextText: '다음 달',
-                monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-                monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-                dayNames: ['일','월','화','수','목','금','토'],
-                dayNamesShort: ['일','월','화','수','목','금','토'],
-                dayNamesMin: ['일','월','화','수','목','금','토'],
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
                 showMonthAfterYear: true,
                 yearSuffix: '년'
             })
         })
     </script>
 </head>
+
 <body>
     <header class="header">
         <div class="hdTopWrap">
@@ -97,34 +109,34 @@
                             </div>
                         </li>
                         <li><a href="subpage02.html" class="active">호텔예약</a>
-                        <div class="submenu">
-                            <ul class="clearfix">
-                                <li><a href="#">동남아</a></li>
-                                <li><a href="#">일본</a></li>
-                                <li><a href="#">미주/하와이</a></li>
-                                <li><a href="#">괌/사이판</a></li>
-                            </ul>
-                        </div>
+                            <div class="submenu">
+                                <ul class="clearfix">
+                                    <li><a href="#">동남아</a></li>
+                                    <li><a href="#">일본</a></li>
+                                    <li><a href="#">미주/하와이</a></li>
+                                    <li><a href="#">괌/사이판</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li><a href="subpage03.html">렌트카</a>
-                        <div class="submenu">
-                            <ul class="clearfix">
-                                <li><a href="#">동남아</a></li>
-                                <li><a href="#">일본</a></li>
-                                <li><a href="#">미주/하와이</a></li>
-                                <li><a href="#">괌/사이판</a></li>
-                            </ul>
-                        </div>
+                            <div class="submenu">
+                                <ul class="clearfix">
+                                    <li><a href="#">동남아</a></li>
+                                    <li><a href="#">일본</a></li>
+                                    <li><a href="#">미주/하와이</a></li>
+                                    <li><a href="#">괌/사이판</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li><a href="subpage04.html">여행TIP</a>
-                        <div class="submenu">
-                            <ul class="clearfix">
-                                <li><a href="#">동남아</a></li>
-                                <li><a href="#">일본</a></li>
-                                <li><a href="#">미주/하와이</a></li>
-                                <li><a href="#">괌/사이판</a></li>
-                            </ul>
-                        </div>
+                            <div class="submenu">
+                                <ul class="clearfix">
+                                    <li><a href="#">동남아</a></li>
+                                    <li><a href="#">일본</a></li>
+                                    <li><a href="#">미주/하와이</a></li>
+                                    <li><a href="#">괌/사이판</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li><a href="subpage05.html">회사소개</a></li>
                         <li><a href="subpage06.html">커뮤니티</a></li>
@@ -133,7 +145,7 @@
             </div>
         </div>
     </header>
-    
+
     <div class="totalWrap">
         <div class="visualWrap">
             <div class="visualTop">
@@ -176,13 +188,14 @@
                                                         <option value="이코노미">이코노미</option>
                                                     </select>
                                                 </div>
-                                                    <div>
-                                                        <label for="usernum">인원</label>
-                                                        <input type="number" name="usernum" id="usernum" class="inp-field">
-                                                    </div>        
+                                                <div>
+                                                    <label for="usernum">인원</label>
+                                                    <input type="number" name="usernum" id="usernum" class="inp-field">
+                                                </div>
                                             </div>
                                         </fieldset>
-                                        <button type="text" class="btn-click"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
+                                        <button type="text" class="btn-click"> <i
+                                                class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
                                     </form>
                                 </li>
                                 <li class="sItem">
@@ -220,13 +233,14 @@
                                                         <option value="이코노미">이코노미</option>
                                                     </select>
                                                 </div>
-                                                    <div>
-                                                        <label for="usernum">인원</label>
-                                                        <input type="number" name="usernum" id="usernum" class="inp-field">
-                                                    </div>        
+                                                <div>
+                                                    <label for="usernum">인원</label>
+                                                    <input type="number" name="usernum" id="usernum" class="inp-field">
+                                                </div>
                                             </div>
                                         </fieldset>
-                                        <button type="text" class="btn-click"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
+                                        <button type="text" class="btn-click"> <i
+                                                class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
                                     </form>
                                 </li>
                                 <li class="sItem">
@@ -264,13 +278,14 @@
                                                         <option value="이코노미">이코노미</option>
                                                     </select>
                                                 </div>
-                                                    <div>
-                                                        <label for="usernum">인원</label>
-                                                        <input type="number" name="usernum" id="usernum" class="inp-field">
-                                                    </div>        
+                                                <div>
+                                                    <label for="usernum">인원</label>
+                                                    <input type="number" name="usernum" id="usernum" class="inp-field">
+                                                </div>
                                             </div>
                                         </fieldset>
-                                        <button type="text" class="btn-click"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
+                                        <button type="text" class="btn-click"> <i
+                                                class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
                                     </form>
                                 </li>
                                 <li class="sItem">
@@ -308,21 +323,22 @@
                                                         <option value="이코노미">이코노미</option>
                                                     </select>
                                                 </div>
-                                                    <div>
-                                                        <label for="usernum">인원</label>
-                                                        <input type="number" name="usernum" id="usernum" class="inp-field">
-                                                    </div>        
+                                                <div>
+                                                    <label for="usernum">인원</label>
+                                                    <input type="number" name="usernum" id="usernum" class="inp-field">
+                                                </div>
                                             </div>
                                         </fieldset>
-                                        <button type="text" class="btn-click"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
+                                        <button type="text" class="btn-click"> <i
+                                                class="fa-solid fa-magnifying-glass"></i>&nbsp검색하기</button>
                                     </form>
                                 </li>
-                               
+
                             </ul>
                         </div>
 
                         <div class="slideTap">
-                            
+
                             <a href="#" data-slide-index="0"><i class="fa-solid fa-plane-up"></i> 항공예약</a>
                             <a href="#" data-slide-index="1"><i class="fa-solid fa-hotel"></i>호텔예약</a>
                             <a href="#" data-slide-index="2"><i class="fa-solid fa-car-side"></i>렌트카</a>
@@ -333,7 +349,7 @@
                         <img src="images/content2.png" alt="" class="con">
                         <img src="images/content5.png" alt="" class="cont">
                         <img src="images/content1.png" alt="" class="contt">
-                        <h1> <span>TRAVEL</span> <span>GO</span></h1> 
+                        <h1> <span>TRAVEL</span> <span>GO</span></h1>
                         <h2> 지금, 여행이 떠나고 싶다면? <br> 여행박사와 함께 떠나요! </h2>
                     </div>
                 </div>
@@ -367,7 +383,7 @@
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
-                          </div>
+                        </div>
                         </li>
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
@@ -382,22 +398,61 @@
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
-                          </div>
+                        </div>
                         </li>
 
 
-                        <li style="background-image: url(images/weather.jpg)" class="wBox">
-                            <h3>INCHEON</h3>
-                            <div class="txtWrap">
-                                <a href="#">20°C 구름조금 <br> 습도 60% 바람 남남동 2m/s</a>
+                        <li class="wbox">
+                            <div class="weather">
+                                <select name="inpCity">
+                                    <option value="seoul">서울</option>
+                                    <option value="busan">부산</option>
+                                    <option value="incheon">인천</option>
+                                </select>
+
+                                <div class="wInfo">
+                                    <h1 class="city">도시</h1>
+                                    <div class="wrap">
+                                        <p class="w_id">clear</p>
+                                        <div class="img">icon</div>
+                                        <p class="temp">22</p>
+                                    </div>
+                                </div>
                             </div>
                         </li>
+
+                        <script>
+                            const myid = "e0e195564b715383cb28b37f2c9c605c";
+                            let loc = "seoul";
+                            
+                            $.ajax({
+                                url: "https://api.openweathermap.org/data/2.5/weather?q=" + loc + "&appid=" + myid + "&units=metric&lang=kr",
+                                dataType: "json",
+                                success: locData
+                            })
+                            function locData(data) {
+                                console.log(data)
+                                let city = data.name;
+                                let weather = data.weather[0].description;
+                                let icon = data.weather[0].icon;
+                                let iUrl = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png">`
+                                let temp = parseInt(data.main.temp) + "°C";
+
+                                $(".city").html(city);
+                                $(".w_id").html(weather);
+                                $(".img").html(iUrl);
+                                $(".temp").html(temp);
+                            }
+                            
+                        </script>
+
+
                         <li style="background-image: url(images/box10.jpg)">
                             <h4> "해외여행은 처음이였는데, <br> 여행박사 덕분에 무사히 <br> 다녀올 수 있었어요! "</h4>
                             <p>이용후기</p>
                             <div class="blind"><img src="../06tour/images/Layer 1.png" alt=""></div>
                         </li>
-                        
+
                     </ul>
                     <ul class="bottomboxWrap">
                         <li style="background-image: url(images/box12.jpg)">
@@ -410,7 +465,7 @@
                             <div class="box">
                                 <h3><i class="fa-solid fa-burger"></i> &nbsp 맛집 정보</h3>
                                 <div class="circle"></div>
-                                
+
                             </div>
                         </li>
                         <li style="background-image: url(images/box14.jpg)">
@@ -431,36 +486,41 @@
             </div>
         </div>
     </div>
-    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.min.js" integrity="sha512-g+qKl+LYdI74iYWV+VI91ahB/N6mVjrP8aGCtyIGvM2FkgpwbEEey0eUVUuqNn94yYS6/WxVwTawukEqaf+53A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.5/swiper-bundle.min.js"
+        integrity="sha512-g+qKl+LYdI74iYWV+VI91ahB/N6mVjrP8aGCtyIGvM2FkgpwbEEey0eUVUuqNn94yYS6/WxVwTawukEqaf+53A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
     </script>
 
     <footer>
         <div class="footerWrap">
             <div class="ftTop">
                 <a href="#"><img src="images/logo.png" alt=""></a>
-                    <p>
-                        <a href="#">이용약관<span></span></a>
-                        <a href="#">개인정보취급방침<span></span></a>
-                        <a href="#">사이트맵<span></span></a>
-                        <a href="#">고객센터<span></span></a>
-                        <a href="#">광고 및 제휴 문의</a>
-                    </p>
+                <p>
+                    <a href="#">이용약관<span></span></a>
+                    <a href="#">개인정보취급방침<span></span></a>
+                    <a href="#">사이트맵<span></span></a>
+                    <a href="#">고객센터<span></span></a>
+                    <a href="#">광고 및 제휴 문의</a>
+                </p>
             </div>
-    
-            <div class="ftadd"> 
-                    <p>123-456 서울특별시 구로구 구로동 (주) 하이미디어 사업지등록번호 : 123-4558-56596 대표이사 : 홍길동 대표번호 : 02-4855-05965</p>
-                    <p>Copyrightⓒ NHN Doctortour Corp. All rights reserved.</p>
+
+            <div class="ftadd">
+                <p>123-456 서울특별시 구로구 구로동 (주) 하이미디어 사업지등록번호 : 123-4558-56596 대표이사 : 홍길동 대표번호 : 02-4855-05965</p>
+                <p>Copyrightⓒ NHN Doctortour Corp. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

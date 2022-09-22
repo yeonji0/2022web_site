@@ -41,7 +41,7 @@ a:link, a:visited {
   margin-bottom: 0;
 }
 .navTop .menuWrap li a {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,4 +208,14 @@ a:link, a:visited {
 }
 .page2 .wrap .imgWrap .v11st:hover {
   opacity: 1;
+}
+
+.page3 .wrap {
+  height: 755px;
+}
+.page3 .wrap .item {
+  height: 510px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */

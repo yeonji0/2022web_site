@@ -20,7 +20,7 @@ a:link,a:visited{text-decoration: none; color: #333;}
         ul{display: flex; height: 100%;margin-bottom:0;}
         li{
             a{
-                padding: 30px;
+                padding: 10px;
                 display: flex; justify-content: center; align-items: center;
                 font-size: 1.3em; font-weight: bold;
                 &:hover{color: #D42470;}
@@ -176,5 +176,22 @@ a:link,a:visited{text-decoration: none; color: #333;}
                 }
             }
         }
+    }
+}
+
+.page3{
+    .wrap{
+        height:755px;
+        .item{
+            height: 510px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+
+
+
+
     }
 }

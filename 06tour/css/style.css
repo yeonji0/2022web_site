@@ -317,7 +317,17 @@ transition: 0.3s;
     color: #fff;
 }
 .tourboxWrap h4{font-size: 13px; position: absolute; left: 10px; top: 35px; line-height: 20px;}
-.tourboxWrap .wBox{overflow: hidden;}
+.tourboxWrap .wbox{
+    background: rgba(0,0,0,0.5);
+    display: flex; 
+   
+}
+.weather{
+    margin-top: 50px;
+    width: 100%; height: 100%;
+    text-align: center;
+    }
+.weather img{margin: 0 auto;}
 .tourboxWrap .txtWrap{
     padding: 10px 20px;
     width: 100%;height: 100%;
@@ -332,12 +342,6 @@ transition: 0.3s;
     width: 100%;height: 100%;
 } 
 
-.tourboxWrap .wBox:hover .txtWrap{
-    top: 0;
-}
-.tourboxWrap .wBox:hover .txtWrap a{
-    display: flex; justify-content: center; align-items: center;
-}
 
 
 .bottomboxWrap .box{
