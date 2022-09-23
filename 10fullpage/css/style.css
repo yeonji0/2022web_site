@@ -211,11 +211,31 @@ a:link, a:visited {
 }
 
 .page3 .wrap {
-  height: 755px;
+  height: 800px;
 }
 .page3 .wrap .item {
   height: 510px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.page4 {
+  margin-top: 50px;
+  display: flex;
+  color: #757575;
+}
+.page4 h2 {
+  font-size: 3em;
+}
+.page4 h3 {
+  font-size: 2em;
+}
+.page4 .wrap {
+  justify-content: center;
+  align-items: center;
+}
+.page4 .wrap .newsWrap {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
