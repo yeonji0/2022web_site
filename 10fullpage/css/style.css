@@ -2,7 +2,8 @@ body {
   font-family: "Questrial", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -11,11 +12,13 @@ html, body {
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   color: #333;
 }
@@ -221,21 +224,28 @@ a:link, a:visited {
 }
 
 .page4 {
-  margin-top: 50px;
   display: flex;
-  color: #757575;
-}
-.page4 h2 {
-  font-size: 3em;
-}
-.page4 h3 {
-  font-size: 2em;
 }
 .page4 .wrap {
   justify-content: center;
   align-items: center;
+  color: #757575;
+}
+.page4 .wrap h2 {
+  font-size: 3em;
+}
+.page4 .wrap h3 {
+  font-size: 2em;
 }
 .page4 .wrap .newsWrap {
   width: 100%;
   height: 100%;
+}
+.page4 .wrap .newsWrap #nsVideo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0 !important;
 }/*# sourceMappingURL=style.css.map */
