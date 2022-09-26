@@ -248,4 +248,31 @@ a:visited {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 0 !important;
+}
+
+.page5 {
+  color: #fff;
+}
+.page5 .ftWrap {
+  display: flex;
+}
+.page5 .ftWrap a {
+  font-size: 1.5em;
+  color: #fff;
+}
+.page5 .ftWrap span {
+  display: flex;
+  align-self: center;
+  width: 2px;
+  height: 20px;
+  background: #fff;
+  margin: 0 10px;
+}
+.page5 .icWrap {
+  display: flex;
+}
+.page5 .icWrap a {
+  color: #fff;
+  font-size: 2em;
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
