@@ -112,6 +112,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .page2 .wrap .imgWrap .v1st {
   position: absolute;
@@ -227,6 +228,8 @@ a:visited {
   display: flex;
 }
 .page4 .wrap {
+  width: 100%;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   color: #757575;
@@ -239,7 +242,7 @@ a:visited {
 }
 .page4 .wrap .newsWrap {
   width: 100%;
-  height: 100%;
+  height: 300px;
 }
 .page4 .wrap .newsWrap #nsVideo {
   position: relative;
@@ -275,4 +278,57 @@ a:visited {
   color: #fff;
   font-size: 2em;
   margin-right: 10px;
+}
+
+/********** css responsive **********/
+@media (max-width: 767px) {
+  .navTop .menuWrap ul {
+    padding: 0;
+  }
+  .page2 .wrap {
+    width: 100%;
+  }
+  .page2 .wrap .v1st, .page2 .wrap .v4st, .page2 .wrap .v8st, .page2 .wrap .v11st {
+    display: none;
+  }
+  .page2 .wrap .v5st {
+    position: absolute;
+    opacity: 0;
+    transform: translate(-199px, -3px);
+    transition: 0.3s;
+  }
+  .page2 .wrap .v5st:hover {
+    opacity: 1;
+    overflow: hidden;
+  }
+  .page4 .wrap {
+    margin-top: 50px;
+  }
+  .page4 .wrap h2 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .page4 .wrap h3 {
+    display: none;
+  }
+  .page4 .wrap .newsWrap {
+    width: 100%;
+    gap: 10px;
+  }
+  .page4 .wrap .newsWrap .n1st {
+    order: 2;
+    width: 100%;
+    height: 100%;
+  }
+  .page4 .wrap .newsWrap .n5st {
+    order: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .page4 .wrap .newsWrap .n2st, .page4 .wrap .newsWrap .n3st, .page4 .wrap .newsWrap .n4st, .page4 .wrap .newsWrap .n6st, .page4 .wrap .newsWrap .n7st, .page4 .wrap .newsWrap .n8st {
+    display: none;
+  }
+  .page5 .ftWrap a {
+    font-size: 1em;
+  }
 }/*# sourceMappingURL=style.css.map */
