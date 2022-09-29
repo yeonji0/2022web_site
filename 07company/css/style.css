@@ -435,6 +435,9 @@ html,body{height: 100%;}
     border-radius: 30px;
     color: #333;
 }
+.eventWrap:hover p{
+    background: rgba(0, 0, 0, 0.3);
+}
 .eventWrap .store{
     width: 630px;
     height: 100%;
@@ -665,10 +668,12 @@ html,body{height: 100%;}
     .eventWrap .store{
         width: 400px;height: 250px;
         margin-bottom: 10px;padding: 20px;
+        border-radius: 50px;
     }
     .eventWrap .delievery{ 
         width: 400px;height: 250px;
         display: flex; justify-content: center; align-items: center;
+        border-radius: 50px;
     }
 
      /* footer */
