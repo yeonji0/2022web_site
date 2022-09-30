@@ -12,4 +12,20 @@ $(window).scroll(function(){
         $(".logoWrap").css("display","none");
     }
     $(".scroll").html(parseInt(scrollY))
-})
+});
+
+$(document).ready(function () {
+    var slide = $(".slide1").bxSlider({
+        auto: true,
+        controls: false
+    });
+
+    $(".next").click(function () {
+        slide.goToNextSlide();
+    });
+
+    $(".prev").click(function () {
+        slide.goToPrevSlide();
+    });
+
+});
