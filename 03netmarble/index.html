@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
@@ -36,16 +37,22 @@
 </head>
 
 <body>
-    <header class="headerWrap clearfix">
-        <h1><a href="#"><img src="images/logo.jpg" alt=""></a></h1>
-        <nav class="navbar">
-            <ul class="clearfix">
-                <li><a href="#">재단소개</a></li>
-                <li><a href="#">재단활동</a></li>
-                <li><a href="#">재단소식</a></li>
-            </ul>
-        </nav>
+    <header id="header">
+            <div class="headerWrap">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+                <div class="logoWrap">
+                    <a href="#"><img src="images/iconn.png" alt=""></a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">재단소개</a></li>
+                        <li><a href="#">재단활동</a></li>
+                        <li><a href="#">재단소식</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
+
     <div class="visual">
         <ul class="slide1">
             <li style="background-image: url(images/img.jpg);" class="slideItem">
@@ -190,5 +197,6 @@
         </div>
     </footer>
 </body>
+<script src="js/script.js"></script>
 
 </html>

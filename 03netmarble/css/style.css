@@ -2,18 +2,35 @@
 
 
 
-    .container{width: 1280px; margin: 0 auto;}
+    #header{
+        width: 100%; margin: 0 auto; 
+        position: fixed; z-index: 9999;
+        overflow: hidden;
+       
+    }
+    /* #header.fixed{
+        position: fixed; background: #fff;
+        color: #333;
+    } */
+    .headerWrap{
+        width: 1200px; height: 80px;
+        margin: 0 auto;
+        display: flex; justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .logoWrap{
+        display: none;
+        width: 165px;height: 100%;
+    }
+    .logoWrap img{width: 165px;height: 35px;position: relative;align-self: center;
+    margin-top: 20px;}
+    .logoWrap a{position: absolute;top: 0; left: 0;}   
 
-
-    .headerWrap{width: 1220px; margin: 0 auto; line-height: 76px;}
-    .headerWrap h1{float: left;}
-    .headerWrap img{width: 165px;}
-
-    .navbar {width: 510px; float: right; margin-top: 30px;}
-    .navbar li{float:left; width: calc( 100% / 3 );}
-    .navbar li a{display: block; text-align: center; font-size: 20px;}
-
-
+    .navbar {margin-left: auto;}
+    .navbar ul{display: flex; gap: 20px;}
+    .navbar li a{font-size: 20px; padding: 0 30px; color: #fff;}
+    
     /* visual */
     .visual {position: relative; 
         height: 100vh; min-height: 800px;
