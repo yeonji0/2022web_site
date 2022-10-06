@@ -20,12 +20,4 @@ $(document).ready(function () {
         controls: false
     });
 
-    $(".next").click(function () {
-        slide.goToNextSlide();
-    });
-
-    $(".prev").click(function () {
-        slide.goToPrevSlide();
-    });
-
 });
