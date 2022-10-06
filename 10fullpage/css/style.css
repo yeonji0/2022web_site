@@ -282,8 +282,12 @@ a:visited {
 
 /********** css responsive **********/
 @media (max-width: 767px) {
+  .navTop .menuWrap {
+    margin: 0 auto;
+  }
   .navTop .menuWrap ul {
     padding: 0;
+    font-size: 0.7em;
   }
   .page2 .wrap {
     width: 100%;

@@ -8,12 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.css"
+        integrity="sha512-15OzXDrYC/wTgcjNDIx6+2LiAHCPnS9DiKQj/dhgdRMpdW+W4AoSjxism+gRaDobBaFN+UONPGic1ttu5mpWxg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <title>넷마블문화재단</title>
@@ -21,24 +24,24 @@
 
 <body>
     <header id="header">
-            <div class="headerWrap">
-                <a href="#"><img src="images/logo.png" alt=""></a>
-                <div class="logoWrap">
-                    <a href="#"><img src="images/iconn.png" alt=""></a>
-                </div>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="#">재단소개</a></li>
-                        <li><a href="#">재단활동</a></li>
-                        <li><a href="#">재단소식</a></li>
-                    </ul>
-                </nav>
+        <div class="headerWrap">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+            <div class="logoWrap">
+                <a href="#"><img src="img/iconn.png" alt=""></a>
             </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">재단소개</a></li>
+                    <li><a href="#">재단활동</a></li>
+                    <li><a href="#">재단소식</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div class="visual">
         <ul class="slide1">
-            <li style="background-image: url(images/img.jpg);" class="slideItem">
+            <li style="background-image: url(img/img.jpg);" class="slideItem">
                 <div class="txtWrap">
                     <div class="txt">
                         <h1>어깨동무문고</h1>
@@ -46,7 +49,7 @@
                     </div>
                 </div>
             </li>
-            <li style="background-image: url(images/banner02.jpg);" class="slideItem">
+            <li style="background-image: url(img/banner02.jpg);" class="slideItem">
                 <div class="txtWrap">
                     <div class="txt">
                         <h1>견학프로그램</h1>
@@ -54,7 +57,7 @@
                     </div>
                 </div>
             </li>
-            <li style="background-image: url(images/banner03.jpg);" class="slideItem">
+            <li style="background-image: url(img/banner03.jpg);" class="slideItem">
                 <div class="txtWrap">
                     <div class="txt">
                         <h1>게임소통교육</h1>
@@ -77,12 +80,12 @@
             </ul>
         </div>
     </section>
-    <div class="container">
+    <div class="containerWrap">
         <div class="container cont1st">
             <ul class="clearfix">
                 <li>
                     <div class="card">
-                        <img src="images/link01.jpg" alt="">
+                        <img src="img/link01.jpg" alt="">
                         <div class="card-body">
                             <h3>문화 만들기</h3>
                             <p>게임을 기반으로 다양한 문화적 가치를 공유하고 누구나 <br> 즐겁게 참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.</p>
@@ -91,7 +94,7 @@
                 </li>
                 <li>
                     <div class="card">
-                        <img src="images/link02.jpg" alt="">
+                        <img src="img/link02.jpg" alt="">
                         <div class="card-body">
                             <h3>인재 키우기</h3>
                             <p>미래 문화 산업을 이끌어 갈 가능성 있는 인재들을 발굴하고 <br> 체계적인 성장 기회를 지원합니다.</p>
@@ -100,7 +103,7 @@
                 </li>
                 <li>
                     <div class="card">
-                        <img src="images/link03.jpg" alt="">
+                        <img src="img/link03.jpg" alt="">
                         <div class="card-body">
                             <h3>마음 나누기</h3>
                             <p>나눔이 가진 영향력과 가치를 알리고 쉽게 동참할 수 있는 <br> 기회를 제공하여 모두가 즐거운 나눔 문화를 확산해나갑니다.</p>
@@ -115,71 +118,129 @@
                 <h3>우리는 문화적 가치를 확산하여 우리 사회의 <br> 미래 경쟁력을 높여갑니다</h3>
                 <p>주요목적</p>
             </div>
-            <img src="images/img02.jpg" alt="">
+            <img src="img/img02.jpg" alt="">
 
         </div>
     </div>
-    <div class="boxnewsWrap">
-        <div class="container newsWrap">
-            <h3><a href="#">재단소식</a></h3>
-            <ul>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">뉴스룸</a></li>
-                <li><a href="#">소셜미디어</a></li>
-            </ul>
-        </div>
-            <div class="boxnews">
-                <ul class="clearfix">
-                    <li>
-                        <div class="card-body">
-                            <h3>2022 게임문화체험관 환경개선 <br> 기관 공모 최종 결과 안내</h3>
-                            <p>2022 게임문화체험관 환경개선 기관 공모 최종결과 안내 <br> 2022게임문화체험관환경개선기관공모에 신청해주신 모든 학교및기관에 감사드리며...</p>
+
+    <div id="app">
+
+        <div class="slideWrap">
+
+            <div class="container slide">
+                <h3>재단소식</h3>
+                <div class="tabWrap">
+                    <ul>
+                        <li v-bind:class="{active:tab==1}" @click="tab=1">공지사항</li>
+                        <li v-bind:class="{active:tab==2}" @click="tab=2">뉴스룸</li>
+                        <li v-bind:class="{active:tab==3}" @click="tab=3">소셜미디어</li>
+                    </ul>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item" v-for="(item,i) in noticeData" v-if="tab==1">
+                            <div class="img" v-bind:style="{'background-image':`url(img/${item.img})`}"></div>
+                            <div class="txtWrap">
+                                <div class="wrap">
+                                    <h3>{{item.title}}</h3>
+                                    <p>{{item.content}}</p>
+                                </div>
+                                <div class="date">
+                                    {{item.cate}} / {{item.date}}
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="card-body">
-                            <h3>2021년 넷마블 문화재단 기부금품 사용내역</h3>
-                            <p>2021년 넷마블문화재단 기부금품사용내역 재단법인 넷마블문화재단'기부금품의 모집 및 사용에 관한 법률시행령'에 의거하여 기부금품모집 및 사용내역을 아래와 같이 게시합니다.</p>
+                        <div class="swiper-slide item" v-for="(item,i) in newsData" v-if="tab==2">
+                            <div class="img" v-bind:style="{'background-image':`url(img/${item.img})`}"></div>
+                            <div class="txtWrap">
+                                <div class="wrap">
+                                    <h3>{{item.title}}</h3>
+                                    <p>{{item.content}}</p>
+                                </div>
+                                <div class="date">
+                                    {{item.cate}} / {{item.date}}
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="card-body">
-                            <h3>2021년도 넷마블문화재단 결산공시</h3>
-                            <p>재단법인 넷마블문화재단은 '상속세 및 증여세법 제 50조의 3(곡익법인등의 결산서류등의 공시의무)'에 의거 결산서류 등을 공시합니다. 해당 내역은 국세청 홈텍스...</p>
+                        <div class="swiper-slide item" v-for="(item,i) in snsData" v-if="tab==3">
+                            <div class="img" v-bind:style="{'background-image':`url(img/${item.img})`}"></div>
+                            <div class="txtWrap">
+                                <div class="wrap">
+                                    <h3>{{item.title}}</h3>
+                                    <p>{{item.content}}</p>
+                                </div>
+                                <div class="date">
+                                    {{item.cate}} / {{item.date}}
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-
+        </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"
+        integrity="sha512-dPYTaB+Ip4gAl9vo6U0jSmI8v1AZKjPKH367mfo7pR5gLf1IKpjm3bIXIwm+MmYWEf0eiBEWSBqE+MdKUx0jfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <script type="module">
+        import { noticeData, newsData, snsData } from "./js/data.js"
+        const webApp = {
+            data() {
+                return {
+                    tab: 2,
+                    noticeData: noticeData,
+                    newsData: newsData,
+                    snsData: snsData,
+                }
+            }
+        }
+
+        Vue.createApp(webApp).mount("#app")
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            observer: true,
+            observeParents: true,
+        });
+    </script>
+
+
     <footer class="footerWrap">
         <div class="footerTop">
             <div class="container footer clearfix">
-                <div class="logo"><img src="../03netmarble/images/ftlogo.png" alt="">
-            </div>
+                <div class="logo"><img src="../03netmarble/img/ftlogo.png" alt="">
+                </div>
 
                 <a href="#">서울시 구로구 디지털로26길 38, G-Tower 넷마블 <br> Copyright © Netmarble Corp. All Rights Reserved. </a>
-                </div>
-                
-        
-                <div class="container ftBottom clearfix">
-                    <nav class="ftNav">
-                        <ul class="clearfix">
-                            <li><a href="#">개인정보처리방침</a></li>
-                            <li><a href="#">sns 저작물 이용 동의서</a></li>
-                            <li><a href="#">개인정보처리방침</a></li>
-                            <li><a href="#">주무관청</a></li>
-                            <li><a href="#">국세청</a></li>
-                        </ul>
-                    </nav>
+            </div>
 
-                    </div>
 
+            <div class="container ftBottom clearfix">
+                <nav class="ftNav">
+                    <ul class="clearfix">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">sns 저작물 이용 동의서</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">주무관청</a></li>
+                        <li><a href="#">국세청</a></li>
+                    </ul>
+                </nav>
 
             </div>
+
+
+        </div>
         </div>
     </footer>
+
+
+    
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 
 </html>
